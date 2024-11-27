@@ -1551,7 +1551,7 @@
       "hdmi_text_controller_0": {
         "vlnv": "user.org:user:hdmi_text_controller:2.0",
         "xci_name": "design_1_hdmi_text_controller_0_0",
-        "xci_path": "ip\\design_1_hdmi_text_controller_0_0\\design_1_hdmi_text_controller_0_0.xci",
+        "xci_path": "ip\\design_1_hdmi_text_controller_0_0_1\\design_1_hdmi_text_controller_0_0.xci",
         "inst_hier_path": "hdmi_text_controller_0"
       }
     },

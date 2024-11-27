@@ -123,7 +123,7 @@ module  vga_controller ( input        pixel_clk,        // 50 MHz clock
     assign bram_addr = (vc_nds * 256) + hc_nds;
 
 always @(posedge pixel_clk) begin
-    if (bram_en && bram_rd) begin
+    if (bram_en && bram_rd && display) begin
         {red, green, blue} <= bram_data_out; // Read pixel data from BRAM
         hc_nds <= hc_nds + 1;
         if (hc_nds >= 256) begin

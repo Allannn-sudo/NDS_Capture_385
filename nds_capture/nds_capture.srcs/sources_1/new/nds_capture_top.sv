@@ -74,7 +74,12 @@ module nds_capture_top(
     output logic LED0,
     output logic LED1,
     output logic LED2,
-    output logic LED3
+    output logic LED3,
+    
+    output logic hdmi_tmds_clk_p,
+    output logic hdmi_tmds_clk_n,
+    output logic [2:0] hdmi_tmds_data_p,
+    output logic [2:0] hdmi_tmds_data_n
 );
 
 wire dclk_bufg;
@@ -199,9 +204,9 @@ clk_wiz_0 clk_wiz (
         .red_0({T_R5, T_R4, T_R3, T_R2, T_R1, T_R0}),
         .green_0({T_G5, T_G4, T_G3, T_G2, T_G1, T_G0}),
         .blue_0({T_B5, T_B4, T_B3, T_B2, T_B1, T_B0}),
-        .dclk_0(dclk),
-        .ls_0(ls),
-        .gsp_0(gsp),
+        .dclk_0(dclk_bufg),
+        .ls_0(LS),
+        .gsp_0(GSP),
         .hdmi_clk_p_0(hdmi_tmds_clk_p),
         .hdmi_clk_n_0(hdmi_tmds_clk_n),
         .hdmi_tx_p_0(hdmi_tmds_data_p),

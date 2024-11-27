@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Nov 25 19:58:34 2024
-# Process ID: 13652
+# Start of session at: Wed Nov 27 13:08:05 2024
+# Process ID: 50180
 # Current directory: C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1
 # Command line: vivado.exe -log design_1_hdmi_text_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_hdmi_text_controller_0_0.tcl
 # Log file: C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1/design_1_hdmi_text_controller_0_0.vds
@@ -11,11 +11,11 @@
 # Running On: DESKTOP-0G38QBS, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 16, Host memory: 14879 MB
 #-----------------------------------------------------------
 source design_1_hdmi_text_controller_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 372.996 ; gain = 52.238
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Aaro/Desktop/385/NDS_Capture_385/ip_repo/nds_axi_framebuffer_1_0'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aaro/Documents/GitHub/ece385/ip_repo'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Aaro/Documents/GitHub/ece385/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aaro/Documents/GitHub/ece385/RD_hdmi_ip2020'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_2_guyanw2/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2022/Vivado/2022.2/data/ip'.
@@ -27,28 +27,28 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24672
+INFO: [Synth 8-7075] Helper process launched with PID 23048
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'display_addr', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:95]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWADDR', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:169]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWVALID', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:170]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWREADY', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:171]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WDATA', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:172]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WVALID', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:173]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WREADY', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:174]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WSTRB', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:175]
-INFO: [Synth 8-11241] undeclared symbol 'S_AXI_BREADY', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:176]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:145]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:146]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:147]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:148]
+INFO: [Synth 8-11241] undeclared symbol 'display_addr', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:95]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWADDR', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:169]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWVALID', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:170]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_AWREADY', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:171]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WDATA', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:172]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WVALID', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:173]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WREADY', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:174]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_WSTRB', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:175]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_BREADY', assumed default net type 'wire' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:176]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:145]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:146]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:147]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:148]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1188.531 ; gain = 406.254
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1188.621 ; gain = 406.590
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_hdmi_text_controller_0_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:76]
+INFO: [Synth 8-6157] synthesizing module 'design_1_hdmi_text_controller_0_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/synth/design_1_hdmi_text_controller_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:76]
 	Parameter C_FAMILY bound to: spartan7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -124,85 +124,85 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/Aaro/Desktop/3
 	Parameter C_COUNT_36K_BRAM bound to: 56 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     38.370808 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/blk_mem_gen_0_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:249]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:76]
-WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'blk_mem_gen_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:515]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v:69]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/blk_mem_gen_0_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:76]
+WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'blk_mem_gen_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0_AXI.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
 INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.v:69]
-INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/src/VGA_controller.sv:26]
-INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/src/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:117]
-WARNING: [Synth 8-7071] port 'bram_addr' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:117]
-WARNING: [Synth 8-7071] port 'bram_data_out' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:117]
-WARNING: [Synth 8-7071] port 'bram_en' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:117]
-WARNING: [Synth 8-7071] port 'bram_rd' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:117]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 16 connections declared, but only 11 given [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:117]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
-INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/src/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/src/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:117]
+WARNING: [Synth 8-7071] port 'bram_addr' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:117]
+WARNING: [Synth 8-7071] port 'bram_data_out' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:117]
+WARNING: [Synth 8-7071] port 'bram_en' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:117]
+WARNING: [Synth 8-7071] port 'bram_rd' of module 'vga_controller' is unconnected for instance 'vga' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:117]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 16 connections declared, but only 11 given [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:117]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/srldelay.v:70]
 INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
-INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v:70]
-INFO: [Synth 8-6157] synthesizing module 'encode' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
-INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
-INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
-INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'encode' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
-INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
 INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/nds_capture/nds_bram_write.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'nds_bram_write' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/nds_capture/nds_bram_write.sv:23]
-WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_AWADDR' does not match port width (32) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:169]
-WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_WDATA' does not match port width (32) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:172]
-WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_WSTRB' does not match port width (4) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:175]
-WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_BREADY' does not match port width (2) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:176]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:10]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_hdmi_text_controller_0_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:208]
-WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:318]
-WARNING: [Synth 8-3848] Net bram_data_out in module/entity vga_controller does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/src/VGA_controller.sv:38]
-WARNING: [Synth 8-3848] Net bram_en in module/entity vga_controller does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/src/VGA_controller.sv:39]
-WARNING: [Synth 8-3848] Net bram_rd in module/entity vga_controller does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/src/VGA_controller.sv:40]
-WARNING: [Synth 8-6014] Unused sequential element ade_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:174]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:175]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:176]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_qq_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:177]
-WARNING: [Synth 8-6014] Unused sequential element adin_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:184]
-WARNING: [Synth 8-6014] Unused sequential element adin_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:185]
-WARNING: [Synth 8-6014] Unused sequential element ade_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:174]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:175]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:176]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_qq_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:177]
-WARNING: [Synth 8-6014] Unused sequential element adin_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:184]
-WARNING: [Synth 8-6014] Unused sequential element adin_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:185]
-WARNING: [Synth 8-6014] Unused sequential element ade_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:174]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:175]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:176]
-WARNING: [Synth 8-6014] Unused sequential element ade_reg_qq_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:177]
-WARNING: [Synth 8-6014] Unused sequential element adin_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:184]
-WARNING: [Synth 8-6014] Unused sequential element adin_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:185]
+WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_AWADDR' does not match port width (32) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:169]
+WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_WDATA' does not match port width (32) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:172]
+WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_WSTRB' does not match port width (4) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:175]
+WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_BREADY' does not match port width (2) of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:176]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_hdmi_text_controller_0_0' (0#1) [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/synth/design_1_hdmi_text_controller_0_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0_AXI.sv:208]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0_AXI.sv:318]
+WARNING: [Synth 8-3848] Net bram_data_out in module/entity vga_controller does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/src/VGA_controller.sv:38]
+WARNING: [Synth 8-3848] Net bram_en in module/entity vga_controller does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/src/VGA_controller.sv:39]
+WARNING: [Synth 8-3848] Net bram_rd in module/entity vga_controller does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/src/VGA_controller.sv:40]
+WARNING: [Synth 8-6014] Unused sequential element ade_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:174]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:175]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:176]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_qq_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:177]
+WARNING: [Synth 8-6014] Unused sequential element adin_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:184]
+WARNING: [Synth 8-6014] Unused sequential element adin_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:185]
+WARNING: [Synth 8-6014] Unused sequential element ade_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:174]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:175]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:176]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_qq_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:177]
+WARNING: [Synth 8-6014] Unused sequential element adin_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:184]
+WARNING: [Synth 8-6014] Unused sequential element adin_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:185]
+WARNING: [Synth 8-6014] Unused sequential element ade_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:174]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:175]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:176]
+WARNING: [Synth 8-6014] Unused sequential element ade_reg_qq_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:177]
+WARNING: [Synth 8-6014] Unused sequential element adin_q_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:184]
+WARNING: [Synth 8-6014] Unused sequential element adin_reg_reg was removed.  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/hdmi_tx_0_1/hdl/encode.v:185]
 WARNING: [Synth 8-7137] Register S_AXI_AWADDR_reg in module nds_bram_write has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/nds_capture/nds_bram_write.sv:77]
-WARNING: [Synth 8-3848] Net display_addr in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:95]
-WARNING: [Synth 8-3848] Net S_AXI_AWREADY in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:171]
-WARNING: [Synth 8-3848] Net S_AXI_WREADY in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0.sv:174]
+WARNING: [Synth 8-3848] Net display_addr in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:95]
+WARNING: [Synth 8-3848] Net S_AXI_AWREADY in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:171]
+WARNING: [Synth 8-3848] Net S_AXI_WREADY in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/b872/hdl/hdmi_text_controller_v1_0.sv:174]
 WARNING: [Synth 8-7129] Port adin[3] in module encode__parameterized1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adin[2] in module encode__parameterized1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adin[1] in module encode__parameterized1 is either unconnected or has no load
@@ -305,27 +305,27 @@ WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__param
 WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1577.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1579.035 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst/clk_wiz/inst'
-Finished Parsing XDC File [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst/clk_wiz/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_hdmi_text_controller_0_0_propImpl.xdc].
+Parsing XDC File [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst/clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst/clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0_1/src/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_hdmi_text_controller_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]
@@ -334,35 +334,35 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1577.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1579.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1577.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1579.035 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz/inst. (constraint file  C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc, line 19).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz/inst. (constraint file  C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/hdmi_text_controller_v1_0_AXI_inst/memory. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/vga_to_hdmi. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for inst/hdmi_text_controller_v1_0_AXI_inst/memory. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -419,25 +419,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -455,108 +455,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[31] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[31]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[31] with 2nd driver pin 'axi_wdata[31]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[30] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[30]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[30] with 2nd driver pin 'axi_wdata[30]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[29] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[29]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[29] with 2nd driver pin 'axi_wdata[29]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[28] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[28]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[28] with 2nd driver pin 'axi_wdata[28]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[27] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[27]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[27] with 2nd driver pin 'axi_wdata[27]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[26] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[26]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[26] with 2nd driver pin 'axi_wdata[26]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[25] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[25]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[25] with 2nd driver pin 'axi_wdata[25]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[24] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[24]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[24] with 2nd driver pin 'axi_wdata[24]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[23] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[23]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[23] with 2nd driver pin 'axi_wdata[23]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[22] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[22]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[22] with 2nd driver pin 'axi_wdata[22]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[21] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[21]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[21] with 2nd driver pin 'axi_wdata[21]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[20] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[20]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[20] with 2nd driver pin 'axi_wdata[20]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[19] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[19]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[19] with 2nd driver pin 'axi_wdata[19]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[18] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[18]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[18] with 2nd driver pin 'axi_wdata[18]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[17] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[17]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[17] with 2nd driver pin 'axi_wdata[17]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[16] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[16]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[16] with 2nd driver pin 'axi_wdata[16]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[15] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[15]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[15] with 2nd driver pin 'axi_wdata[15]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[14] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[14]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[14] with 2nd driver pin 'axi_wdata[14]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[13] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[13]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[13] with 2nd driver pin 'axi_wdata[13]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[12] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[12]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[12] with 2nd driver pin 'axi_wdata[12]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[11] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[11]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[11] with 2nd driver pin 'axi_wdata[11]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[10] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[10]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[10] with 2nd driver pin 'axi_wdata[10]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[9] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[9]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[9] with 2nd driver pin 'axi_wdata[9]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[8] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[8]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[8] with 2nd driver pin 'axi_wdata[8]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[7] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[7]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[7] with 2nd driver pin 'axi_wdata[7]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[6] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[6]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[6] with 2nd driver pin 'axi_wdata[6]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[5] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[5]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[5] with 2nd driver pin 'axi_wdata[5]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[4] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[4]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[4] with 2nd driver pin 'axi_wdata[4]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[3] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[3]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[3] with 2nd driver pin 'axi_wdata[3]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[2] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[2]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[2] with 2nd driver pin 'axi_wdata[2]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[1] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[1]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[1] with 2nd driver pin 'axi_wdata[1]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[0] with 1st driver pin 'inst/hdmi_text_controller_v1_0_AXI_inst/bram_wrdata_reg[0]/Q' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ipshared/f500/hdl/hdmi_text_controller_v1_0_AXI.sv:266]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin axi_wdata[0] with 2nd driver pin 'axi_wdata[0]' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.gen/sources_1/bd/design_1/ip/design_1_hdmi_text_controller_0_0/synth/design_1_hdmi_text_controller_0_0.sv:53]
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -590,29 +519,29 @@ Report Cell Usage:
 |19    |OBUFDS     |     4|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 64 critical warnings and 186 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:57 . Memory (MB): peak = 1577.461 ; gain = 795.184
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1577.461 ; gain = 795.184
+Synthesis finished with 0 errors, 0 critical warnings and 186 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:47 . Memory (MB): peak = 1579.035 ; gain = 797.004
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.035 ; gain = 797.004
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1577.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1579.035 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1577.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1579.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 4aae317d
+Synth Design complete, checksum: 84ca6f27
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 144 Warnings, 64 Critical Warnings and 0 Errors encountered.
+82 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1577.461 ; gain = 1170.668
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1579.035 ; gain = 1173.016
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1/design_1_hdmi_text_controller_0_0.dcp' has been generated.
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_hdmi_text_controller_0_0, cache-ID = 20ecdb073d0d3b3c
 INFO: [Coretcl 2-1174] Renamed 36 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/nds_capture/nds_capture.runs/design_1_hdmi_text_controller_0_0_synth_1/design_1_hdmi_text_controller_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_hdmi_text_controller_0_0_utilization_synth.rpt -pb design_1_hdmi_text_controller_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 19:59:52 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 13:09:08 2024...
