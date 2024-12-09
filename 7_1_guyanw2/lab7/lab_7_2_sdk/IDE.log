@@ -1,0 +1,765 @@
+03:42:34 DEBUG : Logs will be stored at 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/IDE.log'.
+03:42:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\temp_xsdb_launch_script.tcl
+03:42:40 INFO  : Platform repository initialization has completed.
+03:42:40 INFO  : Registering command handlers for Vitis TCF services
+03:42:48 INFO  : XSCT server has started successfully.
+03:42:57 INFO  : plnx-install-location is set to ''
+03:42:57 INFO  : Successfully done setting XSCT server connection channel  
+03:42:57 INFO  : Successfully done query RDI_DATADIR 
+03:42:57 INFO  : Successfully done setting workspace for the tool. 
+03:43:46 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:43:46 INFO  : Result from executing command 'getPlatforms': 
+03:43:47 WARN  : An unexpected exception occurred in the module 'platform project logging'
+03:43:47 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+03:43:50 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+03:45:24 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:45:24 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+03:46:30 INFO  : Result from executing command 'removePlatformRepo': 
+03:46:39 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+03:46:56 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:46:56 INFO  : Result from executing command 'getPlatforms': 
+03:49:32 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:50:34 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:54:30 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:55:10 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:55:32 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:57:10 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:59:35 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+03:59:56 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+04:00:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+04:16:23 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+04:16:34 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:16:34 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+22:34:48 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+22:35:08 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+22:35:08 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+22:43:35 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+22:43:51 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+22:43:51 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+22:45:07 INFO  : Build configuration of 'mb_usb_hdmi' is updated to 'Release'
+22:45:07 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+22:45:09 INFO  : The hardware specification used by project 'mb_usb_hdmi' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+22:45:09 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+22:45:09 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+22:45:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream' in project 'mb_usb_hdmi'.
+22:45:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:45:28 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+22:45:28 INFO  : 'jtag frequency' command is executed.
+22:45:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+22:45:29 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+22:45:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+22:45:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:45:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:29 INFO  : System reset is completed.
+22:45:32 INFO  : 'after 3000' command is executed.
+22:45:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:33 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:45:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+22:45:33 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:45:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:45:53 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+22:45:53 INFO  : 'jtag frequency' command is executed.
+22:45:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+22:45:54 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+22:45:54 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+22:45:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:45:54 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:54 INFO  : System reset is completed.
+22:45:57 INFO  : 'after 3000' command is executed.
+22:45:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:57 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:45:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+22:45:57 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:54:24 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+22:54:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:29 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+22:54:29 INFO  : 'jtag frequency' command is executed.
+22:54:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+22:54:30 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+22:54:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+22:54:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:54:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:30 INFO  : System reset is completed.
+22:54:33 INFO  : 'after 3000' command is executed.
+22:54:33 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:34 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:54:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+22:54:34 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:54:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+22:55:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:00 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+22:55:00 INFO  : 'jtag frequency' command is executed.
+22:55:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+22:55:01 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+22:55:01 INFO  : Context for processor 'microblaze_0' is selected.
+22:55:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+22:55:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:55:01 INFO  : Context for processor 'microblaze_0' is selected.
+22:55:01 INFO  : System reset is completed.
+22:55:04 INFO  : 'after 3000' command is executed.
+22:55:05 INFO  : Context for processor 'microblaze_0' is selected.
+22:55:05 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+22:55:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+22:55:05 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+23:04:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+23:06:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:52 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+23:06:52 INFO  : 'jtag frequency' command is executed.
+23:06:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:06:53 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:06:53 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:06:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:06:53 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:53 INFO  : System reset is completed.
+23:06:56 INFO  : 'after 3000' command is executed.
+23:06:56 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:56 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+23:06:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+23:06:56 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+23:07:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:07:40 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+23:07:40 INFO  : 'jtag frequency' command is executed.
+23:07:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:07:41 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:07:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:07:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:07:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:07:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:07:41 INFO  : System reset is completed.
+23:07:44 INFO  : 'after 3000' command is executed.
+23:07:44 INFO  : Context for processor 'microblaze_0' is selected.
+23:07:44 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+23:07:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+23:07:44 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+23:09:20 INFO  : Result from executing command 'removePlatformRepo': 
+23:09:34 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:09:34 INFO  : Result from executing command 'getPlatforms': 
+23:09:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:09:40 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+23:09:40 INFO  : 'jtag frequency' command is executed.
+23:09:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:09:42 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:09:42 INFO  : Context for processor 'microblaze_0' is selected.
+23:09:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:09:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:09:42 INFO  : Context for processor 'microblaze_0' is selected.
+23:09:42 INFO  : System reset is completed.
+23:09:45 INFO  : 'after 3000' command is executed.
+23:09:45 INFO  : Context for processor 'microblaze_0' is selected.
+23:09:45 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+23:09:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+23:09:45 ERROR : Memory write error at 0x0. MicroBlaze instruction insert overrun
+11:59:05 DEBUG : Logs will be stored at 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/IDE.log'.
+11:59:06 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\temp_xsdb_launch_script.tcl
+11:59:14 INFO  : Platform repository initialization has completed.
+11:59:15 INFO  : Registering command handlers for Vitis TCF services
+11:59:15 INFO  : XSCT server has started successfully.
+11:59:15 INFO  : Successfully done setting XSCT server connection channel  
+11:59:15 INFO  : plnx-install-location is set to ''
+11:59:25 INFO  : Successfully done setting workspace for the tool. 
+11:59:25 INFO  : Successfully done query RDI_DATADIR 
+12:56:59 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+12:57:26 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+12:57:26 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+12:57:26 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+12:57:41 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+12:57:55 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+12:57:55 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+13:39:00 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+13:39:02 INFO  : The hardware specification used by project 'mb_usb_hdmi' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+13:39:02 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+13:39:02 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+13:39:02 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream' in project 'mb_usb_hdmi'.
+13:39:19 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+13:39:36 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+13:42:25 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+13:42:33 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:02:17 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+14:02:34 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+14:02:34 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+14:02:52 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:02:54 INFO  : The hardware specification used by project 'mb_usb_hdmi' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+14:02:54 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+14:02:54 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+14:02:55 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream' in project 'mb_usb_hdmi'.
+14:04:06 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:04:33 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:04:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:44 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:04:44 INFO  : 'jtag frequency' command is executed.
+14:04:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:04:46 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:04:46 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:04:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:04:46 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:46 INFO  : System reset is completed.
+14:04:49 INFO  : 'after 3000' command is executed.
+14:04:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:49 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:04:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:04:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:49 INFO  : 'con' command is executed.
+14:04:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:04:49 INFO  : Disconnected from the channel tcfchan#4.
+14:05:29 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:05:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:34 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:05:34 INFO  : 'jtag frequency' command is executed.
+14:05:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:05:35 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:05:35 INFO  : Context for processor 'microblaze_0' is selected.
+14:05:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:05:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:05:35 INFO  : Context for processor 'microblaze_0' is selected.
+14:05:35 INFO  : System reset is completed.
+14:05:38 INFO  : 'after 3000' command is executed.
+14:05:38 INFO  : Context for processor 'microblaze_0' is selected.
+14:05:38 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:05:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:05:39 INFO  : Context for processor 'microblaze_0' is selected.
+14:05:39 INFO  : 'con' command is executed.
+14:05:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:05:39 INFO  : Disconnected from the channel tcfchan#5.
+14:06:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:10 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:06:10 INFO  : 'jtag frequency' command is executed.
+14:06:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:06:12 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:06:12 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:06:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:06:12 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:12 INFO  : System reset is completed.
+14:06:15 INFO  : 'after 3000' command is executed.
+14:06:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:15 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:06:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:06:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:15 INFO  : 'con' command is executed.
+14:06:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:06:15 INFO  : Disconnected from the channel tcfchan#6.
+14:06:26 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:06:36 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:07:04 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:07:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:09 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:07:09 INFO  : 'jtag frequency' command is executed.
+14:07:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:07:10 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:07:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:07:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:07:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:10 INFO  : System reset is completed.
+14:07:13 INFO  : 'after 3000' command is executed.
+14:07:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:14 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:07:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:07:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:14 INFO  : 'con' command is executed.
+14:07:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:07:14 INFO  : Disconnected from the channel tcfchan#7.
+14:07:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:18 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:07:18 INFO  : 'jtag frequency' command is executed.
+14:07:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:07:19 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:07:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:07:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:07:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:19 INFO  : System reset is completed.
+14:07:22 INFO  : 'after 3000' command is executed.
+14:07:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:07:23 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:07:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:31:16 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+14:31:31 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+14:31:31 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+14:31:39 INFO  : Disconnected from the channel tcfchan#8.
+14:31:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:31:40 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:31:40 INFO  : 'jtag frequency' command is executed.
+14:31:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:31:42 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:31:42 INFO  : Context for processor 'microblaze_0' is selected.
+14:31:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:31:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:31:42 INFO  : Context for processor 'microblaze_0' is selected.
+14:31:42 INFO  : System reset is completed.
+14:31:45 INFO  : 'after 3000' command is executed.
+14:31:45 INFO  : Context for processor 'microblaze_0' is selected.
+14:31:45 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:31:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:31:45 INFO  : Context for processor 'microblaze_0' is selected.
+14:31:45 INFO  : 'con' command is executed.
+14:31:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:31:45 INFO  : Disconnected from the channel tcfchan#10.
+14:42:55 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:43:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:02 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:43:02 INFO  : 'jtag frequency' command is executed.
+14:43:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:43:03 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:43:03 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:43:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:43:04 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:04 INFO  : System reset is completed.
+14:43:07 INFO  : 'after 3000' command is executed.
+14:43:07 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:07 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:43:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:43:07 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:07 INFO  : 'con' command is executed.
+14:43:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:43:07 INFO  : Disconnected from the channel tcfchan#11.
+14:43:58 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:44:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:44:03 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:44:03 INFO  : 'jtag frequency' command is executed.
+14:44:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:44:05 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:44:05 INFO  : Context for processor 'microblaze_0' is selected.
+14:44:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:44:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:44:05 INFO  : Context for processor 'microblaze_0' is selected.
+14:44:05 INFO  : System reset is completed.
+14:44:08 INFO  : 'after 3000' command is executed.
+14:44:08 INFO  : Context for processor 'microblaze_0' is selected.
+14:44:08 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:44:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:44:08 INFO  : Context for processor 'microblaze_0' is selected.
+14:44:08 INFO  : 'con' command is executed.
+14:44:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:44:08 INFO  : Disconnected from the channel tcfchan#12.
+14:45:40 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+14:45:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:44 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+14:45:44 INFO  : 'jtag frequency' command is executed.
+14:45:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:45:45 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+14:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+14:45:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:45 INFO  : System reset is completed.
+14:45:48 INFO  : 'after 3000' command is executed.
+14:45:48 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:49 INFO  : The application 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf' is downloaded to processor 'microblaze_0'.
+14:45:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+14:45:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:49 INFO  : 'con' command is executed.
+14:45:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:45:49 INFO  : Disconnected from the channel tcfchan#13.
+14:47:07 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+15:06:02 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+15:06:16 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+15:06:16 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+15:07:08 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+15:14:07 DEBUG : Logs will be stored at 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/IDE.log'.
+15:14:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\temp_xsdb_launch_script.tcl
+15:14:10 INFO  : Platform repository initialization has completed.
+15:14:11 INFO  : XSCT server has started successfully.
+15:14:11 INFO  : plnx-install-location is set to ''
+15:14:11 INFO  : Successfully done setting XSCT server connection channel  
+15:14:11 INFO  : Successfully done setting workspace for the tool. 
+15:14:12 INFO  : Successfully done query RDI_DATADIR 
+15:14:12 INFO  : Registering command handlers for Vitis TCF services
+15:14:21 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...
+15:14:22 INFO  : The hardware specification used by project 'mb_usb_hdmi' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:14:22 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+15:14:22 INFO  : The file 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+15:14:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Aaro\Desktop\385\NDS_Capture_385\7_1_guyanw2\lab7\lab_7_2_sdk\mb_usb_hdmi\_ide\bitstream' in project 'mb_usb_hdmi'.
+15:14:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:26 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+15:14:26 INFO  : 'jtag frequency' command is executed.
+15:14:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:14:27 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+15:14:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+15:14:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:14:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:27 INFO  : System reset is completed.
+15:14:30 INFO  : 'after 3000' command is executed.
+15:14:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:30 ERROR : invalid ELF file
+15:14:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+15:14:30 ERROR : invalid ELF file
+15:14:39 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+15:14:51 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+15:14:52 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+15:14:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:57 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+15:14:57 INFO  : 'jtag frequency' command is executed.
+15:14:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:14:58 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+15:14:58 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+15:14:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:14:58 INFO  : Context for processor 'microblaze_0' is selected.
+15:14:58 INFO  : System reset is completed.
+15:15:01 INFO  : 'after 3000' command is executed.
+15:15:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:15:01 ERROR : invalid ELF file
+15:15:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+15:15:01 ERROR : invalid ELF file
+15:15:15 INFO  : Result from executing command 'removePlatformRepo': 
+15:15:24 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+15:15:24 INFO  : Result from executing command 'getPlatforms': 
+15:15:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:33 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+15:15:33 INFO  : 'jtag frequency' command is executed.
+15:15:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:15:34 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+15:15:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:15:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+15:15:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:15:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:15:34 INFO  : System reset is completed.
+15:15:37 INFO  : 'after 3000' command is executed.
+15:15:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:15:37 ERROR : invalid ELF file
+15:15:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+15:15:37 ERROR : invalid ELF file
+15:16:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:24 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+15:16:24 INFO  : 'jtag frequency' command is executed.
+15:16:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:16:25 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+15:16:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:16:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+15:16:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:16:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:16:25 INFO  : System reset is completed.
+15:16:28 INFO  : 'after 3000' command is executed.
+15:16:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:16:28 ERROR : invalid ELF file
+15:16:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+15:16:28 ERROR : invalid ELF file
+15:17:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:07 INFO  : Jtag cable 'RealDigital Boo 887100000000A' is selected.
+15:17:07 INFO  : 'jtag frequency' command is executed.
+15:17:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:17:09 INFO  : Device configured successfully with "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit"
+15:17:09 INFO  : Context for processor 'microblaze_0' is selected.
+15:17:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+15:17:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:17:09 INFO  : Context for processor 'microblaze_0' is selected.
+15:17:09 INFO  : System reset is completed.
+15:17:12 INFO  : 'after 3000' command is executed.
+15:17:12 INFO  : Context for processor 'microblaze_0' is selected.
+15:17:12 ERROR : invalid ELF file
+15:17:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk/mb_usb_hdmi/Release/mb_usb_hdmi.elf
+----------------End of Script----------------
+
+15:17:12 ERROR : invalid ELF file
+15:18:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb_hdmi'...

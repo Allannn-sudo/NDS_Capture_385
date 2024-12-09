@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Tue Oct 29 21:59:59 2024
+-- Date        : Tue Oct 29 21:59:57 2024
 -- Host        : 1252f9a25cab running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/user/vivado_work_folder/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top mb_block_dlmb_v10_0 -prefix
+--               mb_block_dlmb_v10_0_ mb_block_dlmb_v10_0_sim_netlist.vhdl
 -- Design      : mb_block_dlmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -52,8 +52,6 @@ entity mb_block_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_NUM_SLAVES of mb_block_dlmb_v10_0_lmb_v10 : entity is 1;
   attribute C_LMB_PROTOCOL : integer;
   attribute C_LMB_PROTOCOL of mb_block_dlmb_v10_0_lmb_v10 : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_block_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end mb_block_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of mb_block_dlmb_v10_0_lmb_v10 is

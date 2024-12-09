@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Tue Oct 29 22:00:27 2024
+// Date        : Tue Oct 29 22:00:24 2024
 // Host        : 1252f9a25cab running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/user/vivado_work_folder/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top mb_block_microblaze_0_0 -prefix
+//               mb_block_microblaze_0_0_ mb_block_microblaze_0_0_stub.v
 // Design      : mb_block_microblaze_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1

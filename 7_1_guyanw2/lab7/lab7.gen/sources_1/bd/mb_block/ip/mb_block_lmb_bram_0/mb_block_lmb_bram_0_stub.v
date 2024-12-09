@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Tue Oct 29 22:00:19 2024
-// Host        : 1252f9a25cab running 64-bit Ubuntu 22.04.5 LTS
+// Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+// Date        : Mon Dec  9 15:00:56 2024
+// Host        : DESKTOP-0G38QBS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               /home/user/vivado_work_folder/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0_stub.v
+//               c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0_stub.v
 // Design      : mb_block_lmb_bram_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1

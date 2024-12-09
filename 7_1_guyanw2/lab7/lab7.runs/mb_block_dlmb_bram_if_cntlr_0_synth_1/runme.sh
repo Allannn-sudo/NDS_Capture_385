@@ -6,10 +6,14 @@
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/home/user/Xilinx/Vitis/2022.2/bin:/home/user/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/lin64:/home/user/Xilinx/Vivado/2022.2/bin
+  PATH=C:/Xilinx2022/Vitis/2022.2/bin;C:/Xilinx2022/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx2022/Vivado/2022.2/ids_lite/ISE/lib/nt64:C:/Xilinx2022/Vivado/2022.2/bin
 else
-  PATH=/home/user/Xilinx/Vitis/2022.2/bin:/home/user/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/lin64:/home/user/Xilinx/Vivado/2022.2/bin:$PATH
+  PATH=C:/Xilinx2022/Vitis/2022.2/bin;C:/Xilinx2022/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx2022/Vivado/2022.2/ids_lite/ISE/lib/nt64:C:/Xilinx2022/Vivado/2022.2/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/vivado_work_folder/lab7/lab7.runs/mb_block_dlmb_bram_if_cntlr_0_synth_1'
+HD_PWD='C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.runs/mb_block_dlmb_bram_if_cntlr_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

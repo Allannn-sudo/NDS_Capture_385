@@ -51,24 +51,35 @@ module hdmi_text_controller_v1_0 #
     input logic  axi_rready
 );
 
-//additional logic variables as necessary to support VGA, and HDMI modules.
-    logic clk_25MHz, clk_125MHz, clk, clk_100MHz;
-    logic locked;
-    logic [9:0] drawX, drawY;
+   
+   
+   logic clk_25MHz, clk_125MHz, clk_100MHz;
+   logic reset_ah;
+   logic locked;
+   
+   logic [9:0] drawX, drawY;
+   
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
-    logic reset_ah;
     
-    logic [31:0] slaves_regs[601];
+    logic [31:0] data_in_a, data_in_b;
+logic [31:0] readout_a, readout_b;
+logic [10:0] addr_a, addr_b;
+logic [3:0] write_enable_a, write_enable_b;
+
+logic [31:0] pallete_regs [7];
+    
+//    logic reset_ah;
+//additional logic variables as necessary to support VGA, and HDMI modules.
     
     assign reset_ah = ~axi_aresetn;
-
+    
 // Instantiation of Axi Bus Interface AXI
 hdmi_text_controller_v1_0_AXI # ( 
     .C_S_AXI_DATA_WIDTH(C_AXI_DATA_WIDTH),
     .C_S_AXI_ADDR_WIDTH(C_AXI_ADDR_WIDTH)
 ) hdmi_text_controller_v1_0_AXI_inst (
-    .S_AXI_ACLK(axi_aclk),
+    .S_AXI_ACLK(clk_25MHz),
     .S_AXI_ARESETN(axi_aresetn),
     .S_AXI_AWADDR(axi_awaddr),
     .S_AXI_AWPROT(axi_awprot),
@@ -90,16 +101,56 @@ hdmi_text_controller_v1_0_AXI # (
     .S_AXI_RVALID(axi_rvalid),
     .S_AXI_RREADY(axi_rready),
     
-    .slaves(slaves_regs)
+//    .mem_write_data(data_in_a),
+//    .mem_wren(write_enable_a),
+////     output logic mem_reset,
+//    .mem_addr(addr_a),
+     
+////     input logic mem_can_read,
+//    .mem_data(readout_a),
+//    .pallete_regs(pallete_regs)
+
+            .red(red),
+        .green(green),
+        .blue(blue),
+        .drawX(drawX),
+        .drawY(drawY)
 );
 
+//    vram_mem vmem (
+//        .clk(clk),
+//        .reset_a(res_a), // Assuming a global reset controls both resets
+//        .reset_b(res_b),
+//        .data_a(data_in_a),
+//        .data_b(data_in_b),
+//        .address_a(addr_a),
+//        .address_b(addr_b),
+//        .wren_a(write_enable_a),
+//        .wren_b(write_enable_b),
+//        .readout_a(readout_a),
+//        .readout_b(readout_b),
+//        .can_read_a(can_read_a),
+//        .can_read_b(can_read_b)
+//    );
+    
+//     blk_mem_gen_0 BRAM (
+//        .clka (axi_aclk),
+//        .clkb (axi_aclk),
+        
+//        .ena (1'b1), // Always enabled for port A
+//        .wea (write_enable_a), // Write enable for port A
+//        .addra (addr_a),
+//        .dina (data_in_a),
+//        .douta (readout_a),
+        
+//        .enb (1'b1), // Always enabled for port B
+//        .web (write_enable_b), // Write enable for port B
+//        .addrb (addr_b),
+//        .dinb (data_in_b),
+//        .doutb (readout_b)
+//    );
 
-//Instiante clocking wizard, VGA sync generator modules, and VGA-HDMI IP here. For a hint, refer to the provided
-//top-level from the previous lab. You should get the IP to generate a valid HDMI signal (e.g. blue screen or gradient)
-//prior to working on the text drawing.
 
-// User logic ends
-    //clock wizard configured with a 1x and 5x clock for HDMI
     clk_wiz_0 clk_wiz (
         .clk_out1(clk_25MHz),
         .clk_out2(clk_125MHz),
@@ -108,8 +159,7 @@ hdmi_text_controller_v1_0_AXI # (
         .clk_in1(axi_aclk)
     );
     
-    
-        //VGA Sync signal generator
+    //VGA Sync signal generator
     vga_controller vga (
         .pixel_clk(clk_25MHz),
         .reset(reset_ah),
@@ -118,9 +168,9 @@ hdmi_text_controller_v1_0_AXI # (
         .active_nblank(vde),
         .drawX(drawX),
         .drawY(drawY)
-    );  
-    
-        //Real Digital VGA to HDMI converter
+    );    
+
+    //Real Digital VGA to HDMI converter
     hdmi_tx_0 vga_to_hdmi (
         //Clocking and Reset
         .pix_clk(clk_25MHz),
@@ -149,15 +199,32 @@ hdmi_text_controller_v1_0_AXI # (
         .TMDS_DATA_N(hdmi_tx_n)          
     );
 
+    
+//    //Color Mapper Module   
+//    color_mapper color_instance(
+//        .DrawX(drawX),
+//        .DrawY(drawY),
+//        .pallete_regs(pallete_regs),
+//        .mem_write_data(data_in_b),
+//    .mem_wren(write_enable_b),
+////     output logic mem_reset,
+//    .mem_addr(addr_b),
+     
+////     input logic mem_can_read,
+//    .mem_data(readout_b),    
+    
+//        .Red(red),
+//        .Green(green),
+//        .Blue(blue)
+//    );
+    
+    
 
-    //Color Mapper Module   
-    color_mapper color_instance(
-        .DrawX(drawX),
-        .DrawY(drawY),
-        .Red(red),
-        .Green(green),
-        .Blue(blue),
-        
-        .slaves(slaves_regs)
-        );
+
+//Instiante clocking wizard, VGA sync generator modules, and VGA-HDMI IP here. For a hint, refer to the provided
+//top-level from the previous lab. You should get the IP to generate a valid HDMI signal (e.g. blue screen or gradient)
+//prior to working on the text drawing.
+
+// User logic ends
+
 endmodule

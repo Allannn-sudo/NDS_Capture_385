@@ -10,7 +10,7 @@
 //simulation video image for testing
 
 `define SIM_VIDEO //Comment out to simulate AXI bus only
-//                    Uncomment to simulate entire screen and write BMP (slow)
+                    //Uncomment to simulate entire screen and write BMP (slow)
 
 module hdmi_text_controller_tb();
 
@@ -111,19 +111,19 @@ module hdmi_text_controller_tb();
     //the pixel clock, assign pixel_clk = hdmi_text_controller_v1_0_inst.clk_25MHz
     
     // Red Green and Blue values respectively - these come from your draw logic
-     assign pixel_rgb[0] = hdmi_text_controller_v1_0_inst.red;
-     assign pixel_rgb[1] = hdmi_text_controller_v1_0_inst.green;
-     assign pixel_rgb[2] = hdmi_text_controller_v1_0_inst.blue;
+     assign pixel_rgb[0] = hdmi_text_controller_v1_0.red;
+     assign pixel_rgb[1] = hdmi_text_controller_v1_0.green;
+     assign pixel_rgb[2] = hdmi_text_controller_v1_0.blue;
     
     // Pixel clock, hs, vs, and vde (!blank) - these come from your internal VGA module
-     assign pixel_clk = hdmi_text_controller_v1_0_inst.clk_25MHz;
-     assign pixel_hs = hdmi_text_controller_v1_0_inst.hsync;
-     assign pixel_vs = hdmi_text_controller_v1_0_inst.vsync;
-     assign pixel_vde = hdmi_text_controller_v1_0_inst.vde;
+     assign pixel_clk = hdmi_text_controller_v1_0.clk_25MHz;
+     assign pixel_hs = hdmi_text_controller_v1_0.hsync;
+     assign pixel_vs = hdmi_text_controller_v1_0.vsync;
+     assign pixel_vde = hdmi_text_controller_v1_0.vde;
     
     // DrawX and DrawY - these come from your internal VGA module
-     assign drawX = hdmi_text_controller_v1_0_inst.drawX;
-     assign drawY = hdmi_text_controller_v1_0_inst.drawY;
+     assign drawX = hdmi_text_controller_v1_0.drawX;
+     assign drawY = hdmi_text_controller_v1_0.drawY;
    
     // BMP writing task, based off work from @BrianHGinc:
     // https://github.com/BrianHGinc/SystemVerilog-TestBench-BPM-picture-generator
@@ -171,85 +171,130 @@ module hdmi_text_controller_tb();
                 bitmap[drawX][drawY] <= {pixel_rgb[0], 4'h0, pixel_rgb[1], 4'h0, pixel_rgb[2], 4'h00};
   
     // Provided AXI write task, follow this example for AXI read below
-    task axi_write (input logic [31:0] addr, input logic [31:0] data);
-        begin
-            #3 write_addr <= addr;	//Put write address on bus
-            write_data <= data;	//put write data on bus
-            write_addr_valid <= 1'b1;	//indicate address is valid
-            write_data_valid <= 1'b1;	//indicate data is valid
-            write_resp_ready <= 1'b1;	//indicate ready for a response
-            write_strb <= 4'hF;		//writing all 4 bytes
+task axi_write_vram (
+    input logic [11:0] addr, 
+    input logic [6:0] code0, input logic [3:0] fgd_idx0, input logic [3:0] bkg_idx0, input logic iv0,
+    input logic [6:0] code1, input logic [3:0] fgd_idx1, input logic [3:0] bkg_idx1, input logic iv1
+);
+    logic [31:0] data;
+begin
+    // Pack the data according to Table 7 format
+    data = {iv1, code1, fgd_idx1, bkg_idx1, iv0, code0, fgd_idx0, bkg_idx0};
     
-            //wait for one slave ready signal or the other
-            wait(write_data_ready || write_addr_ready);
-                
-            @(posedge aclk); //one or both signals and a positive edge
-            if(write_data_ready&&write_addr_ready)//received both ready signals
-            begin
-                write_addr_valid<=0;
-                write_data_valid<=0;
-            end
-            else    //wait for the other signal and a positive edge
-            begin
-                if(write_data_ready)    //case data handshake completed
-                begin
-                    write_data_valid<=0;
-                    wait(write_addr_ready); //wait for address address ready
-                end
-                        else if(write_addr_ready)   //case address handshake completed
-                        begin
-                    write_addr_valid<=0;
-                            wait(write_data_ready); //wait for data ready
-                        end 
-                @ (posedge aclk);// complete the second handshake
-                write_addr_valid<=0; //make sure both valid signals are deasserted
-                write_data_valid<=0;
-            end
-                
-            //both handshakes have occured
-            //deassert strobe
-            write_strb<=0;
+    $display("Writing data %h", data);
     
-            //wait for valid response
-            wait(write_resp_valid);
-            
-            //both handshake signals and rising edge
-            @(posedge aclk);
-    
-            //deassert ready for response
-            write_resp_ready<=0;
-    
-            //end of write transaction
+    // Perform AXI write with packed data
+    #3 write_addr <= addr;        // Put write address on bus
+    write_data <= data;           // Put packed data on bus
+    write_addr_valid <= 1'b1;     // Indicate address is valid
+    write_data_valid <= 1'b1;     // Indicate data is valid
+    write_resp_ready <= 1'b1;     // Indicate ready for a response
+    write_strb <= 4'hF;           // Writing all 4 bytes
+
+    // Wait for slave ready signals or both signals and a positive edge clock
+    wait(write_data_ready || write_addr_ready);
+    @(posedge aclk);
+
+    if(write_data_ready && write_addr_ready) begin
+        write_addr_valid <= 0;
+        write_data_valid <= 0;
+    end else begin
+        if(write_data_ready) begin
+            write_data_valid <= 0;
+            wait(write_addr_ready);
+        end else if(write_addr_ready) begin
+            write_addr_valid <= 0;
+            wait(write_data_ready);
         end
-    endtask;
+
+        @(posedge aclk); // Complete second handshake
+        write_addr_valid <= 0;
+        write_data_valid <= 0;
+    end
+
+    // Deassert strobe and wait for valid response
+    write_strb <= 4'h0;
+    wait(write_resp_valid);
+    @(posedge aclk);
+    write_resp_ready <= 0;       // End of transaction
+end
+endtask
+
+task axi_write_palette (
+    input logic [31:0] addr,
+    input logic [11:0] color1,   // First color (C1) in RGB format (12-bit)
+    input logic [11:0] color2    // Second color (C2) in RGB format (12-bit)
+);
+    logic [31:0] data;
+begin
+    // Pack two colors into a single word (C1 in upper bits and C2 in lower bits)
+    data = {6'b000000, color1[11:8], color1[7:4], color1[3:0], color2[11:8], color2[7:4], color2[3:0], 1'b0};
+    
+    #3 write_addr <= addr;              // Put address on bus (palette register address)
+    write_data <= data;                 // Put packed colors on bus
+    write_addr_valid <= 1'b1;           // Indicate address is valid
+    write_data_valid <= 1'b1;           // Indicate data is valid
+    write_resp_ready <= 1'b1;           // Indicate ready for response
+    write_strb <= 4'hF;                 // Writing all bytes
+
+    wait(write_data_ready || write_addr_ready);
+    @(posedge aclk);
+
+    if (write_data_ready && write_addr_ready) begin
+        write_addr_valid <= 0;
+        write_data_valid <= 0;
+    end else begin
+        if (write_data_ready) begin
+            write_data_valid <= 0;
+            wait(write_addr_ready);
+        end else if (write_addr_ready) begin
+            write_addr_valid <= 0;
+            wait(write_data_ready);
+        end
+
+        @(posedge aclk);          // Complete second handshake
+        write_addr_valid <= 0;
+        write_data_valid <= 0;
+    end
+
+    wait(write_resp_valid);
+    
+    @(posedge aclk);    
+    write_resp_ready <= 0;              // End of transaction   
+end 
+endtask
+
     
     //Fill in this task to perform an AXI read, similar to the provided example
     //of the AXI write above, follow the waveforms provided into the I.AMM manual
     //Note the read handshake process is simpler than the write
     task axi_read (input logic [31:0] addr, output logic [31:0] data);
         begin
-            // Step 1: Set the read address on the bus 
-            read_addr <= addr; 
-            read_addr_valid <= 1'b1; // Indicate address is valid 
-            read_data_ready <= 1'b1; // Indicate ready to accept data 
- 
-            // Step 2: Wait for the read address ready signal 
-            wait(read_addr_ready); 
- 
-            // Step 3: Deassert the read address valid signal 
-            @(posedge aclk); 
-            read_addr_valid <= 0; 
- 
-            // Step 4: Wait for the read data valid signal 
-            wait(read_data_valid); 
- 
-            // Step 5: Capture the read data 
-            @(posedge aclk); 
-            data <= read_data; 
- 
-            // Step 6: Indicate that the read data has been accepted 
-            read_data_ready <= 0; 
-            // End of read transaction
+            // Step 1: Initiate Read Address Phase
+                read_addr <= addr;       // Set read address
+                read_addr_valid <= 1'b1; // Indicate that address is valid
+                
+                // Wait for slave to assert ARREADY signal
+                wait (read_addr_ready);
+                
+                // Step 2: Complete Address Handshake
+                @(posedge aclk);         // Wait for clock edge
+                read_addr_valid <= 1'b0; // Deassert ARVALID after handshake
+                
+                // Assert RREADY early, indicating readiness to accept data 
+                read_data_ready <= 1'b1;
+                
+                // Step 3: Wait for Data Phase
+                wait (read_data_valid);  // Wait for RVALID from slave
+            
+                // Step 4: Capture Data and Complete Data Handshake
+                @(posedge aclk);         // Wait for clock edge
+                data <= read_data;       // Capture data from RDATA
+                
+            
+                @(posedge aclk);         // Wait for clock edge
+                read_data_ready <= 1'b0; // Deassert RREADY after handshake
+            
         end
     endtask;
   
@@ -261,56 +306,89 @@ module hdmi_text_controller_tb();
         arstn <= 1;
         
         //remember AXI addresses are BYTE addresses!
-        //This writes something into the Control Register so that we're not simulating a black screen
-//        repeat (4) @(posedge aclk) axi_write((600*4), 32'h001F6000); //write control reg to set foreground and background
-        
-     	 // Each character code is assumed to be the ASCII value left-shifted and the color blue added.
-    	repeat (4) @(posedge aclk) axi_write(4*1, 32'h006700FF); // 'g'
-    	repeat (4) @(posedge aclk) axi_write(4*2, 32'h007500FF); // 'u'
-    	repeat (4) @(posedge aclk) axi_write(4*3, 32'h007900FF); // 'y'
-    	repeat (4) @(posedge aclk) axi_write(4*4, 32'h006100FF); // 'a'
-    	repeat (4) @(posedge aclk) axi_write(4*5, 32'h006E00FF); // 'n'
-    	repeat (4) @(posedge aclk) axi_write(4*6, 32'h007700FF); // 'w'
-    	repeat (4) @(posedge aclk) axi_write(4*7, 32'h003200FF); // '2'
-    	
-    	// Space and "completed" in white (ASCII + color white 0xFFFFFF)
-    	repeat (4) @(posedge aclk) axi_write(4*8, 32'h002000FF);  // ' ' (space) in white
-    	repeat (4) @(posedge aclk) axi_write(4*9, 32'h006300FF);  // 'c' in white
-    	repeat (4) @(posedge aclk) axi_write(4*10, 32'h006F00FF); // 'o' in white
-    	repeat (4) @(posedge aclk) axi_write(4*11, 32'h006D00FF); // 'm' in white
-    	repeat (4) @(posedge aclk) axi_write(4*12, 32'h007000FF); // 'p' in white
-    	repeat (4) @(posedge aclk) axi_write(4*13, 32'h006C00FF); // 'l' in white
-    	repeat (4) @(posedge aclk) axi_write(4*14, 32'h006500FF); // 'e' in white
-    	repeat (4) @(posedge aclk) axi_write(4*15, 32'h007400FF); // 't' in white
-    	repeat (4) @(posedge aclk) axi_write(4*16, 32'h006500FF); // 'e' in white
-    	repeat (4) @(posedge aclk) axi_write(4*17, 32'h006400FF); // 'd' in white
+  // Command 1: Black and Blue
+// Write Blue and Green to the palette
+repeat (4) @(posedge aclk) axi_write_palette(32'h2000, 12'h00F /* Blue */, 12'h00F /* Green */);
 
-    	// Writing "ECE 385!" in green
-    	repeat (4) @(posedge aclk) axi_write(4*18, 32'h004500FF); // 'E' in green
-    	repeat (4) @(posedge aclk) axi_write(4*19, 32'h004300FF); // 'C' in green
-    	repeat (4) @(posedge aclk) axi_write(4*20, 32'h004500FF); // 'E' in green
-    	repeat (4) @(posedge aclk) axi_write(4*21, 32'h002000FF); // ' ' (space) in green
-    	repeat (4) @(posedge aclk) axi_write(4*22, 32'h003300FF); // '3' in green
-    	repeat (4) @(posedge aclk) axi_write(4*23, 32'h003800FF); // '8' in green
-    	repeat (4) @(posedge aclk) axi_write(4*24, 32'h003500FF); // '5' in green
-    	repeat (4) @(posedge aclk) axi_write(4*25, 32'h002100FF); // '!' in green
+// Command 2: Green and Cyan
+repeat (4) @(posedge aclk) axi_write_palette(32'h2004, 12'h0A0 /* Green */, 12'h0AA /* Cyan */);
+
+// Command 3: Red and Magenta
+repeat (4) @(posedge aclk) axi_write_palette(32'h2008, 12'hA00 /* Red */, 12'hA0A /* Magenta */);
+
+// Command 4: Brown and Light Gray
+repeat (4) @(posedge aclk) axi_write_palette(32'h200C, 12'hA50 /* Brown */, 12'hAAA /* Light Gray */);
+
+// Command 5: Dark Gray and Light Blue
+repeat (4) @(posedge aclk) axi_write_palette(32'h2010, 12'h555 /* Dark Gray */, 12'h55F /* Light Blue */);
+
+// Command 6: Light Green and Light Cyan
+repeat (4) @(posedge aclk) axi_write_palette(32'h2014, 12'h5F5 /* Light Green */, 12'h5FF /* Light Cyan */);
+
+// Command 7: Light Red and Light Magenta
+repeat (4) @(posedge aclk) axi_write_palette(32'h2018, 12'hF55 /* Light Red */, 12'hF5F /* Light Magenta */);
+
+// Command 8: Yellow and White
+repeat (4) @(posedge aclk) axi_write_palette(32'h201C, 12'hFF5 /* Yellow */, 12'hFFF /* White */);
+
+            
+            //Write into every one of the 600 VRAM registers, note that this is different than what the driver C code does
+            //because the testbench axi_write task only generates aligned (full 32-bit) AXI writes (e.g. write_strb is always F)
+            //The C code on the MicroBlaze expects to be able to do byte and halfword (16-bit) writes, therefore if the
+            //simulation works but the checksum does not pass in the hardware, check handling of write_strb. 
+    //        for(i=0; i < 1200; i++) begin 
+    //		  repeat (4) @(posedge aclk) axi_write(4*i, i);
+    //        end
+            
+            //The following is the readback routine. It tests that your AXI IP is capable of reading back all 601
+            //VRAM registers via AXI (once you've properly filled in axi_read as above). Note that the verification
+            //of the readback results is automatic, it will throw an assertion if the readback result is not as expected        
+            ////////////////////////////////////////////
+       /// Test Writing and Reading VRAM Entries //
+       ////////////////////////////////////////////                    
+
+               
+// Write "completed" in red (foreground index = 3)
+axi_write_vram(12'h012, /* ASCII 'c' */ 7'h63, /* FGD_IDX */ 4'd3, /* BKG_IDX */ 4'd0, /* IV */ 1'b1,
+                       /* ASCII 'o' */ 7'h6F, /* FGD_IDX */ 4'd3, /* BKG_IDX */ 4'd0, /* IV */ 1'b1);
+
+axi_write_vram(12'h016, /* ASCII 'm' */ 7'h6D, /* FGD_IDX */ 4'd3, /* BKG_IDX */ 4'd0, /* IV */ 1'b1,
+                       /* ASCII 'p' */ 7'h70, /* FGD_IDX */ 4'd3, /* BKG_IDX */ 4'd0, /* IV */ 1'b1);
+
+axi_write_vram(12'h01A, /* ASCII 'l' */ 7'h6C ,/*FGD_IDX*/4'd3 ,/*BKG*/4'd0 ,/*IV*/'b1,
+                        /*ASCII 'e'*/7'h65 ,/*FGD*/4'd3 ,/*BKG*/'b0 ,/*IV*/'b1);
+
+axi_write_vram(12'h01F ,/*ASCII 't'*/7'h74 ,/*FGD*/4'd3 ,/*BKG*/0 ,/*IV*/'b1,
+                        /*ASCII 'e'*/7'h65 ,/*FGD*/4'd3 ,/*BKG*/0 ,/*IV*/'b1);
+
+axi_write_vram(12'h023 ,/*ASCII 'd'*/7'h64 ,/*FGD*/4'd3 ,/*BKG*/0 ,/*IV*/'b1,
+                        /*ASCII null (end)*/7'h00 ,/*FGD*/4'd3 ,/*BKG*/0 ,/*IV*/'b1);
+
+// Write "ECE 385!" in green (foreground index = 2)
+axi_write_vram(12'h027, /* ASCII 'E' */ 7'h45, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1,
+                       /* ASCII 'C' */ 7'h43, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1);
+
+axi_write_vram(12'h02B, /* ASCII 'E' */ 7'h45, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1,
+                       /* ASCII '3' */ 7'h33, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1);
+
+axi_write_vram(12'h02F, /* ASCII '8' */ 7'h38, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1,
+                       /* ASCII '5'*/7'h35 ,/*FGD_IDX*/4'd2 ,/*BKG*/4'd0 ,/*IV*/'b01);
+
+ axi_write_vram(12'h03C, /* ASCII '!' */ 7'h21, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1, /* ASCII '!' */ 7'h00, /* FGD_IDX */ 4'd2, /* BKG_IDX */ 4'd0, /* IV */ 1'b1);
+    
+       ////////////////////////////////////////
+       /// Test Reading Back VRAM Entries   ///
+       ////////////////////////////////////////
+
+       for(i= 'd00;i<600;i++)begin 
+            repeat(4)@(posedge aclk);
+            axi_read(4*i,tb_read);
+
+            axi_read_assert : assert(tb_read == {i+65,i%'d16,(i+8)%'d16,'b00,i+97,(i+8)%'d16,i%'d16,'b01})
+                else $error("Mismatch at address %x. Expected:%h Actual:%h", i*4,{i+65,i%'d16,(i+8)%'d16,'b00,i+97,(i+8)%'d16,i%'d16,'b01},tb_read);
+       end 
         
-        //Write into every one of the 600 VRAM registers, note that this is different than what the driver C code does
-        //because the testbench axi_write task only generates aligned (full 32-bit) AXI writes (e.g. write_strb is always F)
-        //The C code on the MicroBlaze expects to be able to do byte and halfword (16-bit) writes, therefore if the
-        //simulation works but the checksum does not pass in the hardware, check handling of write_strb. 
-        for(i=0; i < 600; i++) begin 
-		  repeat (4) @(posedge aclk) axi_write(4*i, i);
-        end
-        
-        //The following is the readback routine. It tests that your AXI IP is capable of reading back all 601
-        //VRAM registers via AXI (once you've properly filled in axi_read as above). Note that the verification
-        //of the readback results is automatic, it will throw an assertion if the readback result is not as expected        
-        for(i=0; i < 600; i++) begin 
-		  repeat (4) @(posedge aclk) axi_read(4*i, tb_read);
-		  axi_read_assert:assert (tb_read == i) else $error ("AXI readback mismatch at address %x. Expected: %x. Actual:%x.", i, i, tb_read);
-        end
-        
+            
         repeat (4) @(posedge aclk) axi_read(600*4, tb_read);
         $info ("Read back of control register: %x", tb_read);
         
@@ -318,7 +396,7 @@ module hdmi_text_controller_tb();
 		
 		//Simulate until VS goes low (indicating a new frame) and write the results
 		`ifdef SIM_VIDEO
-		wait (~pixel_vs);
+		wait (drawY > 'h010);
 		save_bmp ("lab7_1_sim.bmp");
 		`endif
 		$finish();

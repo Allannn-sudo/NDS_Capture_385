@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/workspace_vivado/lab7/lab7.runs/impl_1/mb_usb_hdmi_top.tcl"
+  variable script "C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.runs/impl_1/mb_usb_hdmi_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -116,7 +116,6 @@ OPTRACE "impl_1" END { }
 }
 
 set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -127,33 +126,37 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache C:/Users/guyanw2/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20588-ECEB-3022-05/incrSyn
+  set_param chipscope.maxJobs 4
+  set_param synth.incrementalSynthesisCache C:/Users/Aaro/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19020-DESKTOP-0G38QBS/incrSyn
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7s50csga324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/workspace_vivado/lab7/lab7.cache/wt [current_project]
-  set_property parent.project_path D:/workspace_vivado/lab7/lab7.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.xpr [current_project]
   set_property ip_repo_paths {
-  D:/workspace_vivado/ip_repo/hdmi_text_controller_1_0
-  D:/workspace_vivado/hdmi_tx_1.0
+  c:/Users/Aaro/Desktop/385/NDS_Capture_385/ip_repo
+  c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/ip_repo/hdmi_text_controller_1_0
+  c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/hdmi_tx_1.0
+  c:/Users/Aaro/Documents/GitHub/ece385/RD_hdmi_ip2020
+  C:/Users/Aaro/Documents/GitHub/ece385/ip_repo_asz
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo D:/workspace_vivado/lab7/lab7.cache/ip [current_project]
+  set_property ip_output_repo C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/workspace_vivado/lab7/lab7.runs/synth_1/mb_usb_hdmi_top.dcp
+  add_files -quiet C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.runs/synth_1/mb_usb_hdmi_top.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/workspace_vivado/lab7/lab7.srcs/sources_1/bd/mb_block/mb_block.bd
+  add_files C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.srcs/sources_1/bd/mb_block/mb_block.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/workspace_vivado/extra/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc
+  read_xdc C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

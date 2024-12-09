@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Tue Oct 29 21:59:59 2024
+-- Date        : Tue Oct 29 21:59:57 2024
 -- Host        : 1252f9a25cab running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/user/vivado_work_folder/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top mb_block_rst_clk_wiz_1_100M_0 -prefix
+--               mb_block_rst_clk_wiz_1_100M_0_ mb_block_rst_clk_wiz_1_100M_0_stub.vhdl
 -- Design      : mb_block_rst_clk_wiz_1_100M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1
