@@ -1,19 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Dec  9 15:54:58 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 11 01:05:36 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="mb_block" PACKAGE="csga324" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="reset_rtl_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_rtl_0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="uart_rtl_0_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
@@ -24,7 +14,7 @@
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="HDMI_0_tmds_clk_n" SIGIS="clk" SIGNAME="hdmi_text_controller_0_hdmi_clk_n">
+    <PORT DIR="O" NAME="HDMI_0_tmds_clk_n" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_clk_n">
       <CONNECTIONS>
         <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_clk_n"/>
       </CONNECTIONS>
@@ -34,7 +24,7 @@
         <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_tx_n"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="HDMI_0_tmds_clk_p" SIGIS="clk" SIGNAME="hdmi_text_controller_0_hdmi_clk_p">
+    <PORT DIR="O" NAME="HDMI_0_tmds_clk_p" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_clk_p">
       <CONNECTIONS>
         <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_clk_p"/>
       </CONNECTIONS>
@@ -42,6 +32,121 @@
     <PORT DIR="O" LEFT="2" NAME="HDMI_0_tmds_data_p" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_tx_p">
       <CONNECTIONS>
         <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_tx_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_rtl_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_rtl_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_R0" SIGIS="undef" SIGNAME="External_Ports_T_R0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_R0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_R1" SIGIS="undef" SIGNAME="External_Ports_T_R1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_R1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="GSP" SIGIS="undef" SIGNAME="External_Ports_GSP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="GSP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_G2" SIGIS="undef" SIGNAME="External_Ports_T_G2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_G2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_G1" SIGIS="undef" SIGNAME="External_Ports_T_G1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_G1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_G4" SIGIS="undef" SIGNAME="External_Ports_T_G4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_G4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_G3" SIGIS="undef" SIGNAME="External_Ports_T_G3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_G3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_B0" SIGIS="undef" SIGNAME="External_Ports_T_B0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_B0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_G5" SIGIS="undef" SIGNAME="External_Ports_T_G5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_G5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_R2" SIGIS="undef" SIGNAME="External_Ports_T_R2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_R2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_B2" SIGIS="undef" SIGNAME="External_Ports_T_B2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_B2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_B1" SIGIS="undef" SIGNAME="External_Ports_T_B1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_B1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_R4" SIGIS="undef" SIGNAME="External_Ports_T_R4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_R4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_B4" SIGIS="undef" SIGNAME="External_Ports_T_B4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_B4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_B3" SIGIS="undef" SIGNAME="External_Ports_T_B3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_B3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_R3" SIGIS="undef" SIGNAME="External_Ports_T_R3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_R3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_G0" SIGIS="undef" SIGNAME="External_Ports_T_G0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_G0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DCLK" SIGIS="undef" SIGNAME="External_Ports_DCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="DCLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_B5" SIGIS="undef" SIGNAME="External_Ports_T_B5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_B5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="T_R5" SIGIS="undef" SIGNAME="External_Ports_T_R5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="T_R5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="LS" SIGIS="undef" SIGNAME="External_Ports_LS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="LS"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -1027,20 +1132,16 @@
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Clk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="processor_clk"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Clk"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_Clk"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_Clk"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M01_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="microblaze_0" PORT="Clk"/>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_aclk"/>
           </CONNECTIONS>
         </PORT>
@@ -1048,7 +1149,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/hdmi_text_controller_0" HWVERSION="1.0" INSTANCE="hdmi_text_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hdmi_text_controller_thissss" VLNV="xilinx.com:user:hdmi_text_controller_thissss:1.0">
+    <MODULE COREREVISION="17" FULLNAME="/hdmi_text_controller_0" HWVERSION="1.0" INSTANCE="hdmi_text_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hdmi_text_controller_thissss" VLNV="xilinx.com:user:hdmi_text_controller_thissss:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI" NAME="AXI_reg" RANGE="4096" USAGE="register"/>
@@ -1056,7 +1157,7 @@
       <PARAMETERS>
         <PARAMETER NAME="C_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_AXI_ADDR_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_hdmi_text_controller_0_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="mb_block_hdmi_text_controller_0_2"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_AXI_BASEADDR" VALUE="0x44A00000"/>
         <PARAMETER NAME="C_AXI_HIGHADDR" VALUE="0x44A0FFFF"/>
@@ -1080,6 +1181,111 @@
         <PORT DIR="O" LEFT="2" NAME="hdmi_tx_p" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_tx_p">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mb_block_imp" PORT="HDMI_0_tmds_data_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_R0" SIGIS="undef" SIGNAME="External_Ports_T_R0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_R0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_R1" SIGIS="undef" SIGNAME="External_Ports_T_R1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_R1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_R2" SIGIS="undef" SIGNAME="External_Ports_T_R2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_R2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_R3" SIGIS="undef" SIGNAME="External_Ports_T_R3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_R3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_R4" SIGIS="undef" SIGNAME="External_Ports_T_R4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_R4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_R5" SIGIS="undef" SIGNAME="External_Ports_T_R5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_R5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_G0" SIGIS="undef" SIGNAME="External_Ports_T_G0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_G0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_G1" SIGIS="undef" SIGNAME="External_Ports_T_G1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_G1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_G2" SIGIS="undef" SIGNAME="External_Ports_T_G2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_G2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_G3" SIGIS="undef" SIGNAME="External_Ports_T_G3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_G3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_G4" SIGIS="undef" SIGNAME="External_Ports_T_G4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_G4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_G5" SIGIS="undef" SIGNAME="External_Ports_T_G5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_G5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_B0" SIGIS="undef" SIGNAME="External_Ports_T_B0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_B0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_B1" SIGIS="undef" SIGNAME="External_Ports_T_B1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_B1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_B2" SIGIS="undef" SIGNAME="External_Ports_T_B2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_B2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_B3" SIGIS="undef" SIGNAME="External_Ports_T_B3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_B3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_B4" SIGIS="undef" SIGNAME="External_Ports_T_B4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_B4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="T_B5" SIGIS="undef" SIGNAME="External_Ports_T_B5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="T_B5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DCLK" SIGIS="undef" SIGNAME="External_Ports_DCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DCLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GSP" SIGIS="undef" SIGNAME="External_Ports_GSP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GSP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="LS" SIGIS="undef" SIGNAME="External_Ports_LS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LS"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
@@ -1401,9 +1607,9 @@
         <PARAMETER NAME="C_IADDR_SIZE" VALUE="32"/>
         <PARAMETER NAME="C_PIADDR_SIZE" VALUE="32"/>
         <PARAMETER NAME="C_DADDR_SIZE" VALUE="32"/>
-        <PARAMETER NAME="C_INSTANCE" VALUE="mb_block_microblaze_0_0"/>
+        <PARAMETER NAME="C_INSTANCE" VALUE="mb_block_microblaze_0_1"/>
         <PARAMETER NAME="C_AVOID_PRIMITIVES" VALUE="0"/>
-        <PARAMETER NAME="C_AREA_OPTIMIZED" VALUE="1"/>
+        <PARAMETER NAME="C_AREA_OPTIMIZED" VALUE="0"/>
         <PARAMETER NAME="C_OPTIMIZATION" VALUE="0"/>
         <PARAMETER NAME="C_INTERCONNECT" VALUE="2"/>
         <PARAMETER NAME="C_BASE_VECTORS" VALUE="0x0000000000000000"/>
@@ -1416,20 +1622,20 @@
         <PARAMETER NAME="C_M_AXI_IP_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_IP_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M_AXI_I_BUS_EXCEPTION" VALUE="0"/>
-        <PARAMETER NAME="C_D_LMB" VALUE="1"/>
+        <PARAMETER NAME="C_D_LMB" VALUE="0"/>
         <PARAMETER NAME="C_D_LMB_PROTOCOL" VALUE="0"/>
         <PARAMETER NAME="C_D_AXI" VALUE="1"/>
-        <PARAMETER NAME="C_I_LMB" VALUE="1"/>
+        <PARAMETER NAME="C_I_LMB" VALUE="0"/>
         <PARAMETER NAME="C_I_LMB_PROTOCOL" VALUE="0"/>
         <PARAMETER NAME="C_I_AXI" VALUE="0"/>
-        <PARAMETER NAME="G_TEMPLATE_LIST" VALUE="8"/>
-        <PARAMETER NAME="C_USE_MSR_INSTR" VALUE="1"/>
-        <PARAMETER NAME="C_USE_PCMP_INSTR" VALUE="1"/>
-        <PARAMETER NAME="C_USE_BARREL" VALUE="1"/>
+        <PARAMETER NAME="G_TEMPLATE_LIST" VALUE="0"/>
+        <PARAMETER NAME="C_USE_MSR_INSTR" VALUE="0"/>
+        <PARAMETER NAME="C_USE_PCMP_INSTR" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BARREL" VALUE="0"/>
         <PARAMETER NAME="C_USE_DIV" VALUE="0"/>
-        <PARAMETER NAME="C_USE_HW_MUL" VALUE="1"/>
+        <PARAMETER NAME="C_USE_HW_MUL" VALUE="0"/>
         <PARAMETER NAME="C_USE_FPU" VALUE="0"/>
-        <PARAMETER NAME="C_USE_REORDER_INSTR" VALUE="0"/>
+        <PARAMETER NAME="C_USE_REORDER_INSTR" VALUE="1"/>
         <PARAMETER NAME="C_UNALIGNED_EXCEPTIONS" VALUE="0"/>
         <PARAMETER NAME="C_ILL_OPCODE_EXCEPTION" VALUE="0"/>
         <PARAMETER NAME="C_DIV_ZERO_EXCEPTION" VALUE="0"/>
@@ -1439,15 +1645,15 @@
         <PARAMETER NAME="C_FSL_EXCEPTION" VALUE="0"/>
         <PARAMETER NAME="C_USE_STACK_PROTECTION" VALUE="0"/>
         <PARAMETER NAME="C_IMPRECISE_EXCEPTIONS" VALUE="0"/>
-        <PARAMETER NAME="C_USE_INTERRUPT" VALUE="2"/>
+        <PARAMETER NAME="C_USE_INTERRUPT" VALUE="0"/>
         <PARAMETER NAME="C_USE_EXT_BRK" VALUE="0"/>
         <PARAMETER NAME="C_USE_EXT_NM_BRK" VALUE="0"/>
         <PARAMETER NAME="C_USE_NON_SECURE" VALUE="0"/>
         <PARAMETER NAME="C_USE_MMU" VALUE="0"/>
-        <PARAMETER NAME="C_MMU_DTLB_SIZE" VALUE="2"/>
-        <PARAMETER NAME="C_MMU_ITLB_SIZE" VALUE="1"/>
+        <PARAMETER NAME="C_MMU_DTLB_SIZE" VALUE="4"/>
+        <PARAMETER NAME="C_MMU_ITLB_SIZE" VALUE="2"/>
         <PARAMETER NAME="C_MMU_TLB_ACCESS" VALUE="3"/>
-        <PARAMETER NAME="C_MMU_ZONES" VALUE="2"/>
+        <PARAMETER NAME="C_MMU_ZONES" VALUE="16"/>
         <PARAMETER NAME="C_MMU_PRIVILEGED_INSTR" VALUE="0"/>
         <PARAMETER NAME="C_USE_BRANCH_TARGET_CACHE" VALUE="0"/>
         <PARAMETER NAME="C_BRANCH_TARGET_CACHE_SIZE" VALUE="0"/>
@@ -1510,8 +1716,8 @@
         <PARAMETER NAME="C_ICACHE_HIGHADDR" VALUE="0x000000003fffffff"/>
         <PARAMETER NAME="C_USE_ICACHE" VALUE="0"/>
         <PARAMETER NAME="C_ALLOW_ICACHE_WR" VALUE="1"/>
-        <PARAMETER NAME="C_ADDR_TAG_BITS" VALUE="0"/>
-        <PARAMETER NAME="C_CACHE_BYTE_SIZE" VALUE="4096"/>
+        <PARAMETER NAME="C_ADDR_TAG_BITS" VALUE="17"/>
+        <PARAMETER NAME="C_CACHE_BYTE_SIZE" VALUE="8192"/>
         <PARAMETER NAME="C_ICACHE_LINE_LEN" VALUE="4"/>
         <PARAMETER NAME="C_ICACHE_ALWAYS_USED" VALUE="1"/>
         <PARAMETER NAME="C_ICACHE_STREAMS" VALUE="0"/>
@@ -1531,8 +1737,8 @@
         <PARAMETER NAME="C_DCACHE_HIGHADDR" VALUE="0x000000003fffffff"/>
         <PARAMETER NAME="C_USE_DCACHE" VALUE="0"/>
         <PARAMETER NAME="C_ALLOW_DCACHE_WR" VALUE="1"/>
-        <PARAMETER NAME="C_DCACHE_ADDR_TAG" VALUE="0"/>
-        <PARAMETER NAME="C_DCACHE_BYTE_SIZE" VALUE="4096"/>
+        <PARAMETER NAME="C_DCACHE_ADDR_TAG" VALUE="17"/>
+        <PARAMETER NAME="C_DCACHE_BYTE_SIZE" VALUE="8192"/>
         <PARAMETER NAME="C_DCACHE_LINE_LEN" VALUE="4"/>
         <PARAMETER NAME="C_DCACHE_ALWAYS_USED" VALUE="1"/>
         <PARAMETER NAME="C_DCACHE_USE_WRITEBACK" VALUE="0"/>
@@ -1601,7 +1807,7 @@
         <PARAMETER NAME="C_M15_AXIS_PROTOCOL" VALUE="GENERIC"/>
         <PARAMETER NAME="C_S15_AXIS_PROTOCOL" VALUE="GENERIC"/>
         <PARAMETER NAME="C_INTERRUPT_MON" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_microblaze_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="mb_block_microblaze_0_1"/>
         <PARAMETER NAME="C_ENDIANNESS" VALUE="1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PROCESSOR"/>
         <PARAMETER NAME="EDK_SPECIAL" VALUE="microblaze"/>
@@ -1617,116 +1823,9 @@
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="mb_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Interrupt" SIGIS="INTERRUPT" SIGNAME="microblaze_0_Interrupt">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="irq"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Interrupt_Address" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Interrupt_Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="interrupt_address"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Interrupt_Ack" RIGHT="1" SIGIS="undef" SIGNAME="microblaze_0_Interrupt_Ack">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="processor_ack"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Instr_Addr" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Instr_Addr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="M_ABus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Instr" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Instr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_ReadDBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="IFetch" SIGIS="undef" SIGNAME="microblaze_0_IFetch">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="M_ReadStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="I_AS" SIGIS="undef" SIGNAME="microblaze_0_I_AS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="M_AddrStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="IReady" SIGIS="undef" SIGNAME="microblaze_0_IReady">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_Ready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="IWAIT" SIGIS="undef" SIGNAME="microblaze_0_IWAIT">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_Wait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="ICE" SIGIS="undef" SIGNAME="microblaze_0_ICE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_CE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="IUE" SIGIS="undef" SIGNAME="microblaze_0_IUE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_UE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Data_Addr" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Data_Addr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="M_ABus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Data_Read" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Data_Read">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_ReadDBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Data_Write" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Data_Write">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="M_DBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="D_AS" SIGIS="undef" SIGNAME="microblaze_0_D_AS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="M_AddrStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Read_Strobe" SIGIS="undef" SIGNAME="microblaze_0_Read_Strobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="M_ReadStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Write_Strobe" SIGIS="undef" SIGNAME="microblaze_0_Write_Strobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="M_WriteStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="DReady" SIGIS="undef" SIGNAME="microblaze_0_DReady">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Ready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="DWait" SIGIS="undef" SIGNAME="microblaze_0_DWait">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Wait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="DCE" SIGIS="undef" SIGNAME="microblaze_0_DCE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_CE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="DUE" SIGIS="undef" SIGNAME="microblaze_0_DUE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_UE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Byte_Enable" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_Byte_Enable">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="M_BE"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="Interrupt" SIGIS="INTERRUPT"/>
+        <PORT DIR="I" LEFT="0" NAME="Interrupt_Address" RIGHT="31" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="Interrupt_Ack" RIGHT="1" SIGIS="undef"/>
         <PORT DIR="O" LEFT="31" NAME="M_AXI_DP_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S00_AXI_awaddr"/>
@@ -1869,48 +1968,13 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_axi_intc_interrupt" NAME="INTERRUPT" TYPE="TARGET" VLNV="xilinx.com:interface:mbinterrupt:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="INTERRUPT" TYPE="TARGET" VLNV="xilinx.com:interface:mbinterrupt:1.0">
           <PARAMETER NAME="SENSITIVITY" VALUE="LEVEL_HIGH"/>
-          <PARAMETER NAME="LOW_LATENCY" VALUE="1"/>
+          <PARAMETER NAME="LOW_LATENCY" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="ACK" PHYSICAL="Interrupt_Ack"/>
             <PORTMAP LOGICAL="ADDRESS" PHYSICAL="Interrupt_Address"/>
             <PORTMAP LOGICAL="INTERRUPT" PHYSICAL="Interrupt"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_DLMB" DATAWIDTH="32" NAME="DLMB" TYPE="MASTER" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="Data_Addr"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="D_AS"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="Byte_Enable"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="DCE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="Data_Read"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="Read_Strobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="DReady"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="DUE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="DWait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="Data_Write"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="Write_Strobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_ILMB" DATAWIDTH="32" NAME="ILMB" TYPE="MASTER" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_ONLY"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="Instr_Addr"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="I_AS"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="ICE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="Instr"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="IFetch"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="IReady"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="IUE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="IWAIT"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="microblaze_0_M_AXI_DP" DATAWIDTH="32" NAME="M_AXI_DP" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
@@ -1982,15 +2046,11 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
       <MEMORYMAP>
-        <MEMRANGE ADDRESSBLOCK="Mem" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x0001FFFF" INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="DLMB" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="SLMB"/>
-        <MEMRANGE ADDRESSBLOCK="Mem" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x0001FFFF" INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="ILMB" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="SLMB"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x40600000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4060FFFF" INSTANCE="axi_uartlite_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="microblaze_0_axi_intc" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi"/>
         <MEMRANGE ADDRESSBLOCK="AXI_reg" BASENAME="C_AXI_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_AXI_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="hdmi_text_controller_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MASTERBUSINTERFACE="M_AXI_DP" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="AXI"/>
       </MEMORYMAP>
       <PERIPHERALS>
-        <PERIPHERAL INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr"/>
-        <PERIPHERAL INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr"/>
         <PERIPHERAL INSTANCE="axi_uartlite_0"/>
         <PERIPHERAL INSTANCE="microblaze_0_axi_intc"/>
         <PERIPHERAL INSTANCE="hdmi_text_controller_0"/>
@@ -3645,21 +3705,9 @@
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="mb_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="irq" SIGIS="undef" SIGNAME="microblaze_0_Interrupt">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Interrupt"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="processor_ack" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_Interrupt_Ack">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Interrupt_Ack"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="interrupt_address" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_Interrupt_Address">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Interrupt_Address"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="irq" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="processor_ack" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="interrupt_address" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="s_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -3714,7 +3762,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_axi_intc_interrupt" NAME="interrupt" TYPE="INITIATOR" VLNV="xilinx.com:interface:mbinterrupt:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="interrupt" TYPE="INITIATOR" VLNV="xilinx.com:interface:mbinterrupt:1.0">
           <PARAMETER NAME="SENSITIVITY" VALUE="LEVEL_HIGH"/>
           <PARAMETER NAME="LOW_LATENCY" VALUE="1"/>
           <PORTMAPS>
@@ -4078,22 +4126,36 @@
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M01_ACLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_AWADDR"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="I" LEFT="2" NAME="S00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWPROT">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_AWPROT"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="S00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_AWVALID"/>
@@ -4114,7 +4176,6 @@
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_WSTRB"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="S00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_WVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_WVALID"/>
@@ -4145,17 +4206,11 @@
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_ARADDR"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_ARPROT">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_ARPROT"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="S00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_ARVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_ARVALID"/>
@@ -4176,7 +4231,6 @@
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_RRESP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="S00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_RVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_RVALID"/>
@@ -4192,14 +4246,7 @@
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_intc_s_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_awvalid"/>
@@ -4220,7 +4267,6 @@
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_intc_s_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_wvalid"/>
@@ -4251,14 +4297,7 @@
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_intc_s_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_arvalid"/>
@@ -4279,7 +4318,6 @@
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_intc_s_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rvalid"/>
@@ -4290,29 +4328,12 @@
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M01_ACLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_uartlite_0_s_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef" SIGNAME="axi_uartlite_0_s_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_awvalid"/>
@@ -4333,7 +4354,6 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef" SIGNAME="axi_uartlite_0_s_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_wvalid"/>
@@ -4364,14 +4384,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef" SIGNAME="axi_uartlite_0_s_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_arvalid"/>
@@ -4392,7 +4405,6 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef" SIGNAME="axi_uartlite_0_s_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rvalid"/>
@@ -4403,33 +4415,16 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M02_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" LEFT="2" NAME="M02_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_awprot">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M02_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_awvalid"/>
@@ -4450,7 +4445,6 @@
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M02_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_wvalid"/>
@@ -4481,18 +4475,11 @@
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M02_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" LEFT="2" NAME="M02_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_arprot">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M02_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_arvalid"/>
@@ -4513,7 +4500,6 @@
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M02_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="hdmi_text_controller_0_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="axi_rvalid"/>
@@ -4529,36 +4515,22 @@
         <BUSINTERFACE BUSNAME="microblaze_0_M_AXI_DP" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="S00_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="S00_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S00_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="S00_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="S00_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="S00_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="S00_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="S00_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="S00_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="S00_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="S00_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="S00_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="S00_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="S00_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="S00_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="S00_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="S00_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="S00_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="S00_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="S00_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S00_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="S00_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="S00_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="S00_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="S00_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="S00_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="S00_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="S00_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="S00_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="S00_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="S00_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="S00_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="S00_AXI_rready"/>
           </PORTMAPS>
@@ -4566,38 +4538,22 @@
         <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="M00_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M00_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M00_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M00_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M00_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M00_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M00_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M00_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M00_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M00_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M00_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M00_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M00_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M00_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M00_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M00_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M00_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M00_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M00_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M00_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M00_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M00_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M00_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M00_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M00_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M00_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M00_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M00_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M00_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M00_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M00_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M00_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M00_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M00_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M00_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M00_AXI_rready"/>
           </PORTMAPS>
@@ -4605,38 +4561,22 @@
         <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="M01_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M01_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M01_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M01_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M01_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M01_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M01_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M01_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M01_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M01_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M01_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M01_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M01_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M01_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M01_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M01_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M01_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M01_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M01_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M01_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M01_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M01_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M01_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M01_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M01_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M01_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M01_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M01_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M01_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M01_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M01_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M01_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M01_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M01_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M01_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M01_AXI_rready"/>
           </PORTMAPS>
@@ -4644,1006 +4584,24 @@
         <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="M02_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M02_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M02_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M02_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M02_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M02_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M02_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M02_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M02_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M02_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M02_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M02_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M02_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M02_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M02_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M02_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M02_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M02_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M02_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M02_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M02_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M02_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M02_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M02_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M02_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M02_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M02_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M02_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M02_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M02_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M02_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M02_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M02_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M02_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M02_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M02_AXI_rready"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE COREREVISION="21" FULLNAME="/microblaze_0_local_memory/dlmb_bram_if_cntlr" HWVERSION="4.0" INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY_CNTLR" MODTYPE="lmb_bram_if_cntlr" VLNV="xilinx.com:ip:lmb_bram_if_cntlr:4.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v4_0;d=pg112-lmb-bram-if-cntlr.pdf"/>
-      </DOCUMENTS>
-      <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="read-write" INTERFACE="SLMB" NAME="Mem" RANGE="8192" USAGE="memory"/>
-      </ADDRESSBLOCKS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_FAMILY" VALUE="spartan7"/>
-        <PARAMETER NAME="C_NUM_LMB" VALUE="1"/>
-        <PARAMETER NAME="C_MASK" VALUE="0x0000000000200000"/>
-        <PARAMETER NAME="C_MASK1" VALUE="0x0000000000800000"/>
-        <PARAMETER NAME="C_MASK2" VALUE="0x0000000000800000"/>
-        <PARAMETER NAME="C_MASK3" VALUE="0x0000000000800000"/>
-        <PARAMETER NAME="C_LMB_AWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_PROTOCOL" VALUE="0"/>
-        <PARAMETER NAME="C_ECC" VALUE="0"/>
-        <PARAMETER NAME="C_INTERCONNECT" VALUE="0"/>
-        <PARAMETER NAME="C_FAULT_INJECT" VALUE="0"/>
-        <PARAMETER NAME="C_CE_FAILING_REGISTERS" VALUE="0"/>
-        <PARAMETER NAME="C_UE_FAILING_REGISTERS" VALUE="0"/>
-        <PARAMETER NAME="C_ECC_STATUS_REGISTERS" VALUE="0"/>
-        <PARAMETER NAME="C_ECC_ONOFF_REGISTER" VALUE="0"/>
-        <PARAMETER NAME="C_ECC_ONOFF_RESET_VALUE" VALUE="1"/>
-        <PARAMETER NAME="C_CE_COUNTER_WIDTH" VALUE="0"/>
-        <PARAMETER NAME="C_WRITE_ACCESS" VALUE="2"/>
-        <PARAMETER NAME="C_BRAM_AWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_ADDR_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_ACLK_FREQ_HZ" VALUE="100000000"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_PROTOCOL" VALUE="AXI4LITE"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_dlmb_bram_if_cntlr_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-        <PARAMETER NAME="EDK_SPECIAL" VALUE="BRAM_CTRL"/>
-        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
-        <PARAMETER NAME="C_HIGHADDR" VALUE="0x0001FFFF"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="LMB_Clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_Rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_bus_struct_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="bus_struct_reset"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="LMB_ABus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_ABus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_ABus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="LMB_WriteDBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_WriteDBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_WriteDBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_AddrStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_AddrStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_AddrStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_ReadStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_ReadStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_ReadStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_WriteStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_WriteStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_WriteStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="LMB_BE" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_BE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_BE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Sl_DBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_DBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="Sl_DBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_Ready" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_Ready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="Sl_Ready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_Wait" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_Wait">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="Sl_Wait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_UE" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_UE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="Sl_UE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_CE" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_CE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="Sl_CE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="BRAM_Rst_A" SIGIS="rst" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Rst_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="rsta"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="BRAM_Clk_A" SIGIS="clk" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Clk_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="clka"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="BRAM_Addr_A" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Addr_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="addra"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="BRAM_EN_A" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_EN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="ena"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="BRAM_WEN_A" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_WEN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="wea"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="BRAM_Dout_A" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Dout_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="dina"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="BRAM_Din_A" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Din_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="douta"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_dlmb_v10_LMB_Sl_0" DATAWIDTH="32" NAME="SLMB" TYPE="SLAVE" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="LMB_ABus"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="LMB_AddrStrobe"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="LMB_BE"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="Sl_CE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="Sl_DBus"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="LMB_ReadStrobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="Sl_Ready"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="Sl_UE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="Sl_Wait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="LMB_WriteDBus"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="LMB_WriteStrobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_PORT" NAME="BRAM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MEM_SIZE" VALUE="131072"/>
-          <PARAMETER NAME="MASTER_TYPE" VALUE="BRAM_CTRL"/>
-          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
-          <PARAMETER NAME="READ_WRITE_MODE"/>
-          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ADDR" PHYSICAL="BRAM_Addr_A"/>
-            <PORTMAP LOGICAL="CLK" PHYSICAL="BRAM_Clk_A"/>
-            <PORTMAP LOGICAL="DIN" PHYSICAL="BRAM_Dout_A"/>
-            <PORTMAP LOGICAL="DOUT" PHYSICAL="BRAM_Din_A"/>
-            <PORTMAP LOGICAL="EN" PHYSICAL="BRAM_EN_A"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="BRAM_Rst_A"/>
-            <PORTMAP LOGICAL="WE" PHYSICAL="BRAM_WEN_A"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/microblaze_0_local_memory/dlmb_v10" HWVERSION="3.0" INSTANCE="microblaze_0_local_memory_dlmb_v10" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="lmb_v10" VLNV="xilinx.com:ip:lmb_v10:3.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v3_0;d=pg113-lmb-v10.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_LMB_NUM_SLAVES" VALUE="1"/>
-        <PARAMETER NAME="C_LMB_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_AWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_PROTOCOL" VALUE="0"/>
-        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_dlmb_v10_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="LMB_Clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="SYS_Rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_bus_struct_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="bus_struct_reset"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_Rst" SIGIS="rst"/>
-        <PORT DIR="I" LEFT="0" NAME="M_ABus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Data_Addr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Data_Addr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M_ReadStrobe" SIGIS="undef" SIGNAME="microblaze_0_Read_Strobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Read_Strobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M_WriteStrobe" SIGIS="undef" SIGNAME="microblaze_0_Write_Strobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Write_Strobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M_AddrStrobe" SIGIS="undef" SIGNAME="microblaze_0_D_AS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="D_AS"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M_DBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Data_Write">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Data_Write"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M_BE" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_Byte_Enable">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Byte_Enable"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_DBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_DBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="Sl_DBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_Ready" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_Ready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="Sl_Ready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_Wait" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_Wait">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="Sl_Wait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_UE" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_UE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="Sl_UE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_CE" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_Sl_CE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="Sl_CE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_ABus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_ABus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_ABus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_ReadStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_ReadStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_ReadStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_WriteStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_WriteStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_WriteStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_AddrStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_AddrStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_AddrStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_ReadDBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Data_Read">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Data_Read"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_WriteDBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_WriteDBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_WriteDBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_Ready" SIGIS="undef" SIGNAME="microblaze_0_DReady">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="DReady"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_Wait" SIGIS="undef" SIGNAME="microblaze_0_DWait">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="DWait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_UE" SIGIS="undef" SIGNAME="microblaze_0_DUE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="DUE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_CE" SIGIS="undef" SIGNAME="microblaze_0_DCE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="DCE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_BE" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_LMB_BE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_BE"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_dlmb_v10_LMB_Sl_0" DATAWIDTH="32" NAME="LMB_Sl_0" TYPE="SLAVE" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="LMB_ABus"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="LMB_AddrStrobe"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="LMB_BE"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="Sl_CE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="Sl_DBus"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="LMB_ReadStrobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="Sl_Ready"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="LMB_Rst"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="Sl_UE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="Sl_Wait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="LMB_WriteDBus"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="LMB_WriteStrobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_DLMB" DATAWIDTH="32" NAME="LMB_M" TYPE="SLAVE" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="M_ABus"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="M_AddrStrobe"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="M_BE"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="LMB_CE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="LMB_ReadDBus"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="M_ReadStrobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="LMB_Ready"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="LMB_Rst"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="LMB_UE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="LMB_Wait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="M_DBus"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="M_WriteStrobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE COREREVISION="21" FULLNAME="/microblaze_0_local_memory/ilmb_bram_if_cntlr" HWVERSION="4.0" INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY_CNTLR" MODTYPE="lmb_bram_if_cntlr" VLNV="xilinx.com:ip:lmb_bram_if_cntlr:4.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v4_0;d=pg112-lmb-bram-if-cntlr.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_FAMILY" VALUE="spartan7"/>
-        <PARAMETER NAME="C_NUM_LMB" VALUE="1"/>
-        <PARAMETER NAME="C_MASK" VALUE="0x0000000000000000"/>
-        <PARAMETER NAME="C_MASK1" VALUE="0x0000000000800000"/>
-        <PARAMETER NAME="C_MASK2" VALUE="0x0000000000800000"/>
-        <PARAMETER NAME="C_MASK3" VALUE="0x0000000000800000"/>
-        <PARAMETER NAME="C_LMB_AWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_PROTOCOL" VALUE="0"/>
-        <PARAMETER NAME="C_ECC" VALUE="0"/>
-        <PARAMETER NAME="C_INTERCONNECT" VALUE="0"/>
-        <PARAMETER NAME="C_FAULT_INJECT" VALUE="0"/>
-        <PARAMETER NAME="C_CE_FAILING_REGISTERS" VALUE="0"/>
-        <PARAMETER NAME="C_UE_FAILING_REGISTERS" VALUE="0"/>
-        <PARAMETER NAME="C_ECC_STATUS_REGISTERS" VALUE="0"/>
-        <PARAMETER NAME="C_ECC_ONOFF_REGISTER" VALUE="0"/>
-        <PARAMETER NAME="C_ECC_ONOFF_RESET_VALUE" VALUE="1"/>
-        <PARAMETER NAME="C_CE_COUNTER_WIDTH" VALUE="0"/>
-        <PARAMETER NAME="C_WRITE_ACCESS" VALUE="2"/>
-        <PARAMETER NAME="C_BRAM_AWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_ADDR_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_ACLK_FREQ_HZ" VALUE="100000000"/>
-        <PARAMETER NAME="C_S_AXI_CTRL_PROTOCOL" VALUE="AXI4LITE"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_ilmb_bram_if_cntlr_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-        <PARAMETER NAME="EDK_SPECIAL" VALUE="BRAM_CTRL"/>
-        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
-        <PARAMETER NAME="C_HIGHADDR" VALUE="0x0001FFFF"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="LMB_Clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_Rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_bus_struct_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="bus_struct_reset"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="LMB_ABus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_ABus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_ABus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="LMB_WriteDBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_WriteDBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_WriteDBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_AddrStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_AddrStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_AddrStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_ReadStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_ReadStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_ReadStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="LMB_WriteStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_WriteStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_WriteStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="LMB_BE" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_BE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_BE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Sl_DBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_DBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="Sl_DBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_Ready" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_Ready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="Sl_Ready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_Wait" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_Wait">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="Sl_Wait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_UE" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_UE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="Sl_UE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="Sl_CE" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_CE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="Sl_CE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="BRAM_Rst_A" SIGIS="rst" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Rst_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="rstb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="BRAM_Clk_A" SIGIS="clk" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Clk_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="clkb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="BRAM_Addr_A" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Addr_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="addrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="BRAM_EN_A" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_EN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="enb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="BRAM_WEN_A" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_WEN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="web"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="BRAM_Dout_A" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Dout_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="dinb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="BRAM_Din_A" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Din_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_lmb_bram" PORT="doutb"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_ilmb_v10_LMB_Sl_0" DATAWIDTH="32" NAME="SLMB" TYPE="SLAVE" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="LMB_ABus"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="LMB_AddrStrobe"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="LMB_BE"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="Sl_CE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="Sl_DBus"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="LMB_ReadStrobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="Sl_Ready"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="Sl_UE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="Sl_Wait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="LMB_WriteDBus"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="LMB_WriteStrobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_PORT" NAME="BRAM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MEM_SIZE" VALUE="131072"/>
-          <PARAMETER NAME="MASTER_TYPE" VALUE="BRAM_CTRL"/>
-          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
-          <PARAMETER NAME="READ_WRITE_MODE"/>
-          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ADDR" PHYSICAL="BRAM_Addr_A"/>
-            <PORTMAP LOGICAL="CLK" PHYSICAL="BRAM_Clk_A"/>
-            <PORTMAP LOGICAL="DIN" PHYSICAL="BRAM_Dout_A"/>
-            <PORTMAP LOGICAL="DOUT" PHYSICAL="BRAM_Din_A"/>
-            <PORTMAP LOGICAL="EN" PHYSICAL="BRAM_EN_A"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="BRAM_Rst_A"/>
-            <PORTMAP LOGICAL="WE" PHYSICAL="BRAM_WEN_A"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/microblaze_0_local_memory/ilmb_v10" HWVERSION="3.0" INSTANCE="microblaze_0_local_memory_ilmb_v10" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="lmb_v10" VLNV="xilinx.com:ip:lmb_v10:3.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v3_0;d=pg113-lmb-v10.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_LMB_NUM_SLAVES" VALUE="1"/>
-        <PARAMETER NAME="C_LMB_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_AWIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_LMB_PROTOCOL" VALUE="0"/>
-        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_ilmb_v10_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="LMB_Clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="SYS_Rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_bus_struct_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="bus_struct_reset"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_Rst" SIGIS="rst"/>
-        <PORT DIR="I" LEFT="0" NAME="M_ABus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Instr_Addr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Instr_Addr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M_ReadStrobe" SIGIS="undef" SIGNAME="microblaze_0_IFetch">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="IFetch"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M_WriteStrobe" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M_AddrStrobe" SIGIS="undef" SIGNAME="microblaze_0_I_AS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="I_AS"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M_DBus" RIGHT="31" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="M_BE" RIGHT="3" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="Sl_DBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_DBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="Sl_DBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_Ready" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_Ready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="Sl_Ready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_Wait" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_Wait">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="Sl_Wait"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_UE" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_UE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="Sl_UE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="Sl_CE" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_Sl_CE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="Sl_CE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_ABus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_ABus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_ABus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_ReadStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_ReadStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_ReadStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_WriteStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_WriteStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_WriteStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_AddrStrobe" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_AddrStrobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_AddrStrobe"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_ReadDBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_Instr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Instr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_WriteDBus" RIGHT="31" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_WriteDBus">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_WriteDBus"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_Ready" SIGIS="undef" SIGNAME="microblaze_0_IReady">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="IReady"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_Wait" SIGIS="undef" SIGNAME="microblaze_0_IWAIT">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="IWAIT"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_UE" SIGIS="undef" SIGNAME="microblaze_0_IUE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="IUE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="LMB_CE" SIGIS="undef" SIGNAME="microblaze_0_ICE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="ICE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="LMB_BE" RIGHT="3" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_LMB_BE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_BE"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_ilmb_v10_LMB_Sl_0" DATAWIDTH="32" NAME="LMB_Sl_0" TYPE="SLAVE" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="LMB_ABus"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="LMB_AddrStrobe"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="LMB_BE"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="Sl_CE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="Sl_DBus"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="LMB_ReadStrobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="Sl_Ready"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="LMB_Rst"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="Sl_UE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="Sl_Wait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="LMB_WriteDBus"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="LMB_WriteStrobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_ILMB" DATAWIDTH="32" NAME="LMB_M" TYPE="SLAVE" VLNV="xilinx.com:interface:lmb:1.0">
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_ONLY"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="STANDARD"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ABUS" PHYSICAL="M_ABus"/>
-            <PORTMAP LOGICAL="ADDRSTROBE" PHYSICAL="M_AddrStrobe"/>
-            <PORTMAP LOGICAL="BE" PHYSICAL="M_BE"/>
-            <PORTMAP LOGICAL="CE" PHYSICAL="LMB_CE"/>
-            <PORTMAP LOGICAL="READDBUS" PHYSICAL="LMB_ReadDBus"/>
-            <PORTMAP LOGICAL="READSTROBE" PHYSICAL="M_ReadStrobe"/>
-            <PORTMAP LOGICAL="READY" PHYSICAL="LMB_Ready"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="LMB_Rst"/>
-            <PORTMAP LOGICAL="UE" PHYSICAL="LMB_UE"/>
-            <PORTMAP LOGICAL="WAIT" PHYSICAL="LMB_Wait"/>
-            <PORTMAP LOGICAL="WRITEDBUS" PHYSICAL="M_DBus"/>
-            <PORTMAP LOGICAL="WRITESTROBE" PHYSICAL="M_WriteStrobe"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE COREREVISION="5" FULLNAME="/microblaze_0_local_memory/lmb_bram" HWVERSION="8.4" INSTANCE="microblaze_0_local_memory_lmb_bram" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.4">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_4;d=pg058-blk-mem-gen.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_FAMILY" VALUE="spartan7"/>
-        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="spartan7"/>
-        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
-        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
-        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="1"/>
-        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="1"/>
-        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
-        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
-        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_MEM_TYPE" VALUE="2"/>
-        <PARAMETER NAME="C_BYTE_SIZE" VALUE="8"/>
-        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
-        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
-        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
-        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="C_INIT_FILE" VALUE="mb_block_lmb_bram_0.mem"/>
-        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
-        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_RSTA" VALUE="1"/>
-        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
-        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
-        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_ENA" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
-        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="1"/>
-        <PARAMETER NAME="C_WEA_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
-        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="32"/>
-        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="32"/>
-        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="32768"/>
-        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="32768"/>
-        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_HAS_RSTB" VALUE="1"/>
-        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
-        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
-        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_ENB" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
-        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="1"/>
-        <PARAMETER NAME="C_WEB_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
-        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="32"/>
-        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="32"/>
-        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="32768"/>
-        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="32768"/>
-        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
-        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
-        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
-        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
-        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
-        <PARAMETER NAME="C_READ_LATENCY_A" VALUE="1"/>
-        <PARAMETER NAME="C_READ_LATENCY_B" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
-        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
-        <PARAMETER NAME="C_COMMON_CLK" VALUE="0"/>
-        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
-        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
-        <PARAMETER NAME="C_USE_URAM" VALUE="0"/>
-        <PARAMETER NAME="C_EN_RDADDRA_CHG" VALUE="0"/>
-        <PARAMETER NAME="C_EN_RDADDRB_CHG" VALUE="0"/>
-        <PARAMETER NAME="C_EN_DEEPSLEEP_PIN" VALUE="0"/>
-        <PARAMETER NAME="C_EN_SHUTDOWN_PIN" VALUE="0"/>
-        <PARAMETER NAME="C_EN_SAFETY_CKT" VALUE="1"/>
-        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
-        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="32"/>
-        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
-        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     20.388 mW"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_block_lmb_bram_0"/>
-        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
-        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
-        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
-        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
-        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
-        <PARAMETER NAME="Memory_Type" VALUE="True_Dual_Port_RAM"/>
-        <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
-        <PARAMETER NAME="Enable_32bit_Address" VALUE="true"/>
-        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
-        <PARAMETER NAME="ECC" VALUE="false"/>
-        <PARAMETER NAME="softecc" VALUE="false"/>
-        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
-        <PARAMETER NAME="EN_DEEPSLEEP_PIN" VALUE="false"/>
-        <PARAMETER NAME="EN_SHUTDOWN_PIN" VALUE="false"/>
-        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
-        <PARAMETER NAME="RD_ADDR_CHNG_A" VALUE="false"/>
-        <PARAMETER NAME="RD_ADDR_CHNG_B" VALUE="false"/>
-        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
-        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
-        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="true"/>
-        <PARAMETER NAME="Byte_Size" VALUE="8"/>
-        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
-        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
-        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
-        <PARAMETER NAME="Write_Width_A" VALUE="32"/>
-        <PARAMETER NAME="Write_Depth_A" VALUE="32768"/>
-        <PARAMETER NAME="Read_Width_A" VALUE="32"/>
-        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
-        <PARAMETER NAME="Enable_A" VALUE="Use_ENA_Pin"/>
-        <PARAMETER NAME="Write_Width_B" VALUE="32"/>
-        <PARAMETER NAME="Read_Width_B" VALUE="32"/>
-        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
-        <PARAMETER NAME="Enable_B" VALUE="Use_ENB_Pin"/>
-        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
-        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
-        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
-        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
-        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
-        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
-        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
-        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
-        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
-        <PARAMETER NAME="Load_Init_File" VALUE="false"/>
-        <PARAMETER NAME="Coe_File" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
-        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
-        <PARAMETER NAME="Use_RSTA_Pin" VALUE="true"/>
-        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
-        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
-        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
-        <PARAMETER NAME="Use_RSTB_Pin" VALUE="true"/>
-        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
-        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
-        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
-        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
-        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
-        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
-        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
-        <PARAMETER NAME="Port_B_Clock" VALUE="100"/>
-        <PARAMETER NAME="Port_B_Write_Rate" VALUE="50"/>
-        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
-        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="100"/>
-        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
-        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
-        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
-        <PARAMETER NAME="use_bram_block" VALUE="BRAM_Controller"/>
-        <PARAMETER NAME="MEM_FILE" VALUE="mb_block_lmb_bram_0.mem"/>
-        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
-        <PARAMETER NAME="EN_SAFETY_CKT" VALUE="true"/>
-        <PARAMETER NAME="READ_LATENCY_A" VALUE="1"/>
-        <PARAMETER NAME="READ_LATENCY_B" VALUE="1"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Clk_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_Clk_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="rsta" SIGIS="rst" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Rst_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_Rst_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_EN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_EN_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_WEN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_WEN_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Addr_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_Addr_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Dout_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_Dout_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_Din_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="BRAM_Din_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Clk_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_Clk_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="rstb" SIGIS="rst" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Rst_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_Rst_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_EN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_EN_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_WEN_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_WEN_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Addr_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_Addr_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Dout_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_Dout_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_Din_A">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="BRAM_Din_A"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="rsta_busy" SIGIS="undef"/>
-        <PORT DIR="O" NAME="rstb_busy" SIGIS="undef"/>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_dlmb_bram_if_cntlr_BRAM_PORT" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MEM_SIZE" VALUE="131072"/>
-          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
-          <PARAMETER NAME="MASTER_TYPE" VALUE="BRAM_CTRL"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ADDR" PHYSICAL="addra"/>
-            <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
-            <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
-            <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
-            <PORTMAP LOGICAL="EN" PHYSICAL="ena"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="rsta"/>
-            <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_local_memory_ilmb_bram_if_cntlr_BRAM_PORT" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MEM_SIZE" VALUE="131072"/>
-          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
-          <PARAMETER NAME="MASTER_TYPE" VALUE="BRAM_CTRL"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ADDR" PHYSICAL="addrb"/>
-            <PORTMAP LOGICAL="CLK" PHYSICAL="clkb"/>
-            <PORTMAP LOGICAL="DIN" PHYSICAL="dinb"/>
-            <PORTMAP LOGICAL="DOUT" PHYSICAL="doutb"/>
-            <PORTMAP LOGICAL="EN" PHYSICAL="enb"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="rstb"/>
-            <PORTMAP LOGICAL="WE" PHYSICAL="web"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -5687,18 +4645,11 @@
         <PORT DIR="I" NAME="dcm_locked" SIGIS="undef"/>
         <PORT DIR="O" NAME="mb_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_mb_reset">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Reset"/>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="processor_rst"/>
+            <CONNECTION INSTANCE="microblaze_0" PORT="Reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_bus_struct_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="SYS_Rst"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_Rst"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="SYS_Rst"/>
-            <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_Rst"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">

@@ -7308,3 +7308,178 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-12-09 16:02:43.312
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '11'
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:54.906
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:54.962
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:54.992
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.022
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.024
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.025
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.026
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.027
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.028
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.028
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.029
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:29:55.030
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-09 17:30:14.487
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+!SESSION 2024-12-10 20:05:58.730 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-12-10 20:06:53.518
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2024-12-10 20:06:59.544
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:14.416
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:14.417
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:14.443
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:14.446
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:14.448
+!MESSAGE XSCT Command: [setws C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk_new], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:23.861
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:23.862
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:23.862
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:23.872
+!MESSAGE XSCT command with result: [setws C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab_7_2_sdk_new], Result: [null, ]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 20:07:23.875
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx2022/Vitis/2022.2/data]. Thread: Worker-2: Initializing s/w repositories

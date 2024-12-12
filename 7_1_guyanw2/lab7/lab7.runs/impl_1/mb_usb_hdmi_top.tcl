@@ -115,9 +115,9 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config  -id {Synth 8-448}  -string {{ERROR: [Synth 8-448] named port connection 'dclk' does not exist for instance 'nds' of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ipshared/9b63/src/hdmi_text_controller_v1_0.sv:237]}}  -suppress 
+set_msg_config  -id {Synth 8-448}  -string {{ERROR: [Synth 8-448] named port connection 'gsp' does not exist for instance 'nds' of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ipshared/9b63/src/hdmi_text_controller_v1_0.sv:239]}}  -suppress 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -125,9 +125,8 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 4
-  set_param synth.incrementalSynthesisCache C:/Users/Aaro/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19020-DESKTOP-0G38QBS/incrSyn
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7s50csga324-1
@@ -138,10 +137,10 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.cache/wt [current_project]
   set_property parent.project_path C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/Aaro/Desktop/385/NDS_Capture_385/ip_repo
-  c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/ip_repo/hdmi_text_controller_1_0
-  c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/hdmi_tx_1.0
-  c:/Users/Aaro/Documents/GitHub/ece385/RD_hdmi_ip2020
+  C:/Users/Aaro/Desktop/385/NDS_Capture_385/ip_repo
+  C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/ip_repo/hdmi_text_controller_1_0
+  C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/hdmi_tx_1.0
+  C:/Users/Aaro/Documents/GitHub/ece385/RD_hdmi_ip2020
   C:/Users/Aaro/Documents/GitHub/ece385/ip_repo_asz
 } [current_project]
   update_ip_catalog
@@ -325,7 +324,6 @@ OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi mb_usb_hdmi_top.mmi }
-  catch { write_bmm -force mb_usb_hdmi_top_bd.bmm }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force mb_usb_hdmi_top.bit 

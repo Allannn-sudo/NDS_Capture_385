@@ -70,13 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
+set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache C:/Users/Aaro/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19020-DESKTOP-0G38QBS/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config  -id {Synth 8-448}  -string {{ERROR: [Synth 8-448] named port connection 'dclk' does not exist for instance 'nds' of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ipshared/9b63/src/hdmi_text_controller_v1_0.sv:237]}}  -suppress 
+set_msg_config  -id {Synth 8-448}  -string {{ERROR: [Synth 8-448] named port connection 'gsp' does not exist for instance 'nds' of module 'nds_bram_write' [c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ipshared/9b63/src/hdmi_text_controller_v1_0.sv:239]}}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -101,16 +100,11 @@ set_property ip_output_repo c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7_1_provided_fa24/mb_usb_hdmi_top.sv
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.srcs/sources_1/imports/new/pins_xor.sv
+  C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7_1_provided_fa24/mb_usb_hdmi_top.sv
+}
 add_files C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.srcs/sources_1/bd/mb_block/mb_block.bd
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_clocks.xdc]
@@ -126,11 +120,14 @@ set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_2/mb_block_axi_uartlite_0_2_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_2/mb_block_axi_uartlite_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_2/mb_block_axi_uartlite_0_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_2/clk_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/blk_mem_gen_0_6/blk_mem_gen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_2/src/blk_mem_gen_0_12/blk_mem_gen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_2/src/clk_wiz_0_2/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_2/src/clk_wiz_0_2/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

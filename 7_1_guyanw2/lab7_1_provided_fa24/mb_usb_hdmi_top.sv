@@ -15,6 +15,38 @@ module mb_usb_hdmi_top(
     input logic Clk,
     input logic reset_rtl_0,
     
+    //NDS signals
+    input logic T_R0,
+    input logic T_R1,
+    input logic T_R2,
+    input logic T_R3,
+    input logic T_R4,
+    input logic T_R5,
+    
+    input logic T_G0,
+    input logic T_G1,
+    input logic T_G2,
+    input logic T_G3,
+    input logic T_G4,
+    input logic T_G5,
+    
+    input logic T_B0,
+    input logic T_B1,
+    input logic T_B2,
+    input logic T_B3,
+    input logic T_B4,
+    input logic T_B5,
+    
+    input logic DCLK,
+    input logic GSP,
+    input logic LS,
+    
+    // LED 0 for xor pins
+    output logic LED0,
+    output logic LED1,
+    output logic LED2,
+    output logic LED3,
+    
     //USB signals
 //    input logic [0:0] gpio_usb_int_tri_i,
 //    output logic gpio_usb_rst_tri_o,
@@ -51,6 +83,48 @@ module mb_usb_hdmi_top(
     
     assign reset_ah = reset_rtl_0;
     
+    wire dclk_bufg;
+BUFG bufg_inst (
+.I(DCLK),
+.O(dclk_bufg)
+);
+
+pins_xor pins_xor (
+    .R0(T_R0),
+    .R1(T_R1),
+    .R2(T_R2),
+    .R3(T_R3),
+    .R4(T_R4),
+    .R5(T_R5),
+    
+    .G0(T_G0),
+    .G1(T_G1),
+    .G2(T_G2),
+    .G3(T_G3),
+    .G4(T_G4),
+    .G5(T_G5),
+    
+    .B0(T_B0),
+    .B1(T_B1),
+    .B2(T_B2),
+    .B3(T_B3),
+    .B4(T_B4),
+    .B5(T_B5),
+    
+    .reset_n(reset_rtl_0),
+    
+    .DCLK(dclk_bufg),
+    .GSP(GSP),
+    .LS(LS),
+    .CLK(Clk),
+    
+    .LED0(LED0), // xor operation on pins
+    .LED1(LED1), // R msb
+    .LED2(LED2), // G msb
+    .LED3(LED3) // B msb
+    
+);
+    
     
     //Keycode HEX drivers
 //    hex_driver HexA (
@@ -85,7 +159,28 @@ module mb_usb_hdmi_top(
         .HDMI_0_tmds_clk_n(hdmi_tmds_clk_n),
         .HDMI_0_tmds_clk_p(hdmi_tmds_clk_p),
         .HDMI_0_tmds_data_n(hdmi_tmds_data_n),
-        .HDMI_0_tmds_data_p(hdmi_tmds_data_p)
+        .HDMI_0_tmds_data_p(hdmi_tmds_data_p),
+        .T_R0(T_R0),
+.T_R1(T_R1),
+.T_R2(T_R2),
+.T_R3(T_R3),
+.T_R4(T_R4),
+.T_R5(T_R5),
+.T_G0(T_G0),
+.T_G1(T_G1),
+.T_G2(T_G2),
+.T_G3(T_G3),
+.T_G4(T_G4),
+.T_G5(T_G5),
+.T_B0(T_B0),
+.T_B1(T_B1),
+.T_B2(T_B2),
+.T_B3(T_B3),
+.T_B4(T_B4),
+.T_B5(T_B5),
+.DCLK(dclk_bufg),
+.LS(LS),
+.GSP(GSP)
     );
         
 

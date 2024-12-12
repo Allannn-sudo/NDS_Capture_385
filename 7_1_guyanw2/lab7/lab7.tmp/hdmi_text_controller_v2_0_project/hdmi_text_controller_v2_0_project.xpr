@@ -6,7 +6,7 @@
 <Project Version="7" Minor="61" Path="c:/users/aaro/desktop/385/nds_capture_385/7_1_guyanw2/lab7/lab7.tmp/hdmi_text_controller_v2_0_project/hdmi_text_controller_v2_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ad8f6cd9389745b690587fd25f3e7c0c"/>
+    <Option Name="Id" Val="9daa2a9d3b864f7286954e8ca2fc0660"/>
     <Option Name="Part" Val="xc7s50csga324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -50,6 +50,7 @@
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/ip_repo/hdmi_text_controller_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/hdmi_tx_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Aaro/Documents/GitHub/ece385/RD_hdmi_ip2020"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/Aaro/Documents/GitHub/ece385/ip_repo_asz"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>

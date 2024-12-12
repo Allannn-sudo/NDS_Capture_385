@@ -7,9 +7,9 @@
   <device name="xc7s50_0" gui_info="dashboard1=hw_ila_1[xc7s50_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7s50_0/hw_ila_1/Status=ILA_STATUS_1;xc7s50_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7s50_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7s50_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7s50_0" gui_info="">
-      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="FULL_PROBES.FILE" value="C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.runs/impl_1/mb_usb_hdmi_top.ltx"/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/$_project_name__top.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.runs/impl_1/mb_usb_hdmi_top.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>
@@ -49,9 +49,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -70,9 +70,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -112,9 +112,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -133,9 +133,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -154,9 +154,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -175,9 +175,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -196,9 +196,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -217,9 +217,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe9[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -238,9 +238,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe10[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -259,9 +259,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -280,9 +280,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -322,9 +322,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -343,9 +343,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe14[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -364,9 +364,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe15[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -385,9 +385,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe16[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -406,9 +406,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe17[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -448,9 +448,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe18[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -469,9 +469,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe19[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -490,9 +490,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe20[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -511,9 +511,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe21[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -532,9 +532,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe22[0]"/>
+        <Option Id="MAP" value=""/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>

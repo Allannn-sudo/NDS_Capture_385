@@ -74,16 +74,177 @@ set_property PACKAGE_PIN F5 [get_ports {hex_gridB[2]}]
 set_property PACKAGE_PIN H5 [get_ports {hex_gridB[3]}]
 
 
-
 #HDMI Signals
-set_property -dict { PACKAGE_PIN V17   IOSTANDARD TMDS_33 } [get_ports {hdmi_tmds_clk_n}]
-set_property -dict { PACKAGE_PIN U16   IOSTANDARD TMDS_33 } [get_ports {hdmi_tmds_clk_p}]
+set_property -dict {PACKAGE_PIN V17 IOSTANDARD TMDS_33} [get_ports hdmi_tmds_clk_n]
+set_property -dict {PACKAGE_PIN U16 IOSTANDARD TMDS_33} [get_ports hdmi_tmds_clk_p]
 
-set_property -dict { PACKAGE_PIN U18   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_n[0]}]
-set_property -dict { PACKAGE_PIN R17   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_n[1]}]
-set_property -dict { PACKAGE_PIN T14   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_n[2]}]
-                                    
-set_property -dict { PACKAGE_PIN U17   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_p[0]}]
-set_property -dict { PACKAGE_PIN R16   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_p[1]}]
-set_property -dict { PACKAGE_PIN R14   IOSTANDARD TMDS_33  } [get_ports {hdmi_tmds_data_p[2]}]
+set_property -dict {PACKAGE_PIN U18 IOSTANDARD TMDS_33} [get_ports {hdmi_tmds_data_n[0]}]
+set_property -dict {PACKAGE_PIN R17 IOSTANDARD TMDS_33} [get_ports {hdmi_tmds_data_n[1]}]
+set_property -dict {PACKAGE_PIN T14 IOSTANDARD TMDS_33} [get_ports {hdmi_tmds_data_n[2]}]
 
+set_property -dict {PACKAGE_PIN U17 IOSTANDARD TMDS_33} [get_ports {hdmi_tmds_data_p[0]}]
+set_property -dict {PACKAGE_PIN R16 IOSTANDARD TMDS_33} [get_ports {hdmi_tmds_data_p[1]}]
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD TMDS_33} [get_ports {hdmi_tmds_data_p[2]}]
+
+#NDS Pins
+set_property PACKAGE_PIN J16 [get_ports T_R0]
+set_property IOSTANDARD LVCMOS33 [get_ports T_R0]
+set_property PACKAGE_PIN J15 [get_ports T_R1]
+set_property IOSTANDARD LVCMOS33 [get_ports T_R1]
+set_property PACKAGE_PIN K16 [get_ports T_R2]
+set_property IOSTANDARD LVCMOS33 [get_ports T_R2]
+set_property PACKAGE_PIN K14 [get_ports T_R3]
+set_property IOSTANDARD LVCMOS33 [get_ports T_R3]
+set_property PACKAGE_PIN H17 [get_ports T_R4]
+set_property IOSTANDARD LVCMOS33 [get_ports T_R4]
+set_property PACKAGE_PIN G18 [get_ports T_R5]
+set_property IOSTANDARD LVCMOS33 [get_ports T_R5]
+
+set_property PACKAGE_PIN H16 [get_ports T_G0]
+set_property IOSTANDARD LVCMOS33 [get_ports T_G0]
+set_property PACKAGE_PIN H18 [get_ports T_G1]
+set_property IOSTANDARD LVCMOS33 [get_ports T_G1]
+set_property PACKAGE_PIN G16 [get_ports T_G2]
+set_property IOSTANDARD LVCMOS33 [get_ports T_G2]
+set_property PACKAGE_PIN E16 [get_ports T_G3]
+set_property IOSTANDARD LVCMOS33 [get_ports T_G3]
+set_property PACKAGE_PIN C11 [get_ports T_G4]
+set_property IOSTANDARD LVCMOS33 [get_ports T_G4]
+set_property PACKAGE_PIN C12 [get_ports T_G5]
+set_property IOSTANDARD LVCMOS33 [get_ports T_G5]
+
+set_property PACKAGE_PIN D10 [get_ports T_B0]
+set_property IOSTANDARD LVCMOS33 [get_ports T_B0]
+set_property PACKAGE_PIN D11 [get_ports T_B1]
+set_property IOSTANDARD LVCMOS33 [get_ports T_B1]
+set_property PACKAGE_PIN E15 [get_ports T_B2]
+set_property IOSTANDARD LVCMOS33 [get_ports T_B2]
+set_property PACKAGE_PIN H14 [get_ports T_B3]
+set_property IOSTANDARD LVCMOS33 [get_ports T_B3]
+set_property PACKAGE_PIN E14 [get_ports T_B4]
+set_property IOSTANDARD LVCMOS33 [get_ports T_B4]
+set_property PACKAGE_PIN H13 [get_ports T_B5]
+set_property IOSTANDARD LVCMOS33 [get_ports T_B5]
+
+set_property PACKAGE_PIN J14 [get_ports DCLK]
+set_property IOSTANDARD LVCMOS33 [get_ports DCLK]
+create_clock -period 339.510 -name dclk -waveform {0.000 169.755} [get_ports DCLK]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets DCLK_IBUF]
+set_property PACKAGE_PIN F15 [get_ports GSP]
+set_property IOSTANDARD LVCMOS33 [get_ports GSP]
+set_property PACKAGE_PIN J13 [get_ports LS]
+set_property IOSTANDARD LVCMOS33 [get_ports LS]
+
+#LED0
+set_property IOSTANDARD LVCMOS33 [get_ports LED0]
+set_property PACKAGE_PIN C13 [get_ports LED0]
+set_property IOSTANDARD LVCMOS33 [get_ports LED1]
+set_property PACKAGE_PIN C14 [get_ports LED1]
+set_property IOSTANDARD LVCMOS33 [get_ports LED2]
+set_property PACKAGE_PIN D14 [get_ports LED2]
+set_property IOSTANDARD LVCMOS33 [get_ports LED3]
+set_property PACKAGE_PIN D15 [get_ports LED3]
+
+set_property PULLDOWN true [get_ports LED0]
+set_property PULLDOWN true [get_ports LED1]
+set_property PULLDOWN true [get_ports LED2]
+set_property PULLDOWN true [get_ports LED3]
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 65536 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list mb_block_i/clk_wiz_0/inst/clk_out1]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list DCLK_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list GSP_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list LED1_OBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list LED2_OBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list LED3_OBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list LS_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list T_B0_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list T_B1_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list T_B2_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list T_B3_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list T_B4_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list T_G0_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list T_G1_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list T_G2_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list T_G3_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list T_G4_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list T_R0_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list T_R1_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list T_R2_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list T_R3_IBUF]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list T_R4_IBUF]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_clk_out1]

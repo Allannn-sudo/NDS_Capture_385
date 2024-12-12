@@ -6,24 +6,6 @@
 # Block Designs: bd/mb_block/mb_block.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block || ORIG_REF_NAME==mb_block} -quiet] -quiet
 
-# IP: bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_microblaze_0_0 || ORIG_REF_NAME==mb_block_microblaze_0_0} -quiet] -quiet
-
-# IP: bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_dlmb_v10_0 || ORIG_REF_NAME==mb_block_dlmb_v10_0} -quiet] -quiet
-
-# IP: bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_ilmb_v10_0 || ORIG_REF_NAME==mb_block_ilmb_v10_0} -quiet] -quiet
-
-# IP: bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==mb_block_dlmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==mb_block_ilmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_lmb_bram_0 || ORIG_REF_NAME==mb_block_lmb_bram_0} -quiet] -quiet
-
 # IP: bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_xbar_0 || ORIG_REF_NAME==mb_block_xbar_0} -quiet] -quiet
 
@@ -45,7 +27,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_cl
 # IP: bd/mb_block/ip/mb_block_axi_uartlite_0_2/mb_block_axi_uartlite_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_axi_uartlite_0_2 || ORIG_REF_NAME==mb_block_axi_uartlite_0_2} -quiet] -quiet
 
-# IP: bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/mb_block_hdmi_text_controller_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_hdmi_text_controller_0_1 || ORIG_REF_NAME==mb_block_hdmi_text_controller_0_1} -quiet] -quiet
+# IP: bd/mb_block/ip/mb_block_hdmi_text_controller_0_2/mb_block_hdmi_text_controller_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_hdmi_text_controller_0_2 || ORIG_REF_NAME==mb_block_hdmi_text_controller_0_2} -quiet] -quiet
+
+# IP: bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_microblaze_0_1 || ORIG_REF_NAME==mb_block_microblaze_0_1} -quiet] -quiet
 
 # XDC: c:/Users/Aaro/Desktop/385/NDS_Capture_385/7_1_guyanw2/lab7/lab7.gen/sources_1/bd/mb_block/mb_block_ooc.xdc
