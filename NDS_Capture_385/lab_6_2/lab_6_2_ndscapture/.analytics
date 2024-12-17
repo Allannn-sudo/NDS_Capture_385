@@ -1,0 +1,4 @@
+timestamp=[2024-12-13 23:28:57], mode=WORKBENCH_START, duration=0:00:13.556, duration_ms=13556, data={}
+timestamp=[2024-12-13 23:28:58], mode=WORKBENCH_UI_INIT, duration=0:00:01.483, duration_ms=1483, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-12-13 23:28:59], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.164, duration_ms=164, data={}
+timestamp=[2024-12-13 23:29:53], mode=APP_CREATION, duration=0:00:10.408, duration_ms=10408, data={name=nds_capture, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_usb_hdmi_top_ndscapture, application_type=application}

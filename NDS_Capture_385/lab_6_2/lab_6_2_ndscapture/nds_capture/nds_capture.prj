@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="nds_capture" location="C:/Users/Aaro/Documents/GitHub/ece385/lab_6_2/lab_6_2/lab_6_2_ndscapture/nds_capture" platform="C:/Users/Aaro/Documents/GitHub/ece385/lab_6_2/lab_6_2/lab_6_2_ndscapture/mb_usb_hdmi_top_ndscapture/export/mb_usb_hdmi_top_ndscapture/mb_usb_hdmi_top_ndscapture.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="nds_capture_system" sysConfig="mb_usb_hdmi_top_ndscapture" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="6fdf276950d9f1c8a0a0b0c3ba2c360f">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1851840233" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1826865895" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
