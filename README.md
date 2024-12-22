@@ -1,4 +1,7 @@
 # NDS_Capture_385
-NDS Capture Card for ECE 385
+An NDS Capture Card project created in ECE 385
+
+Capture the game from from NDS and display onto large monitor
 
 Co-author: aszaw
+
